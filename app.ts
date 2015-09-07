@@ -1,9 +1,14 @@
+/// <reference path="typings/express/express.d.ts" />
+
+//tsc --watch -m commonjs -t es5 --emitDecoratorMetadata app.ts
+
 // Module dependencies
 var express = require('express'),
 	logger = require('morgan'),
 	favicon = require('serve-favicon'),
 	stylus = require('stylus'),
-	nib = require('nib');
+	nib = require('nib'),
+	page = require('./src/scripts/routes/page');
 
 //Initialize Express
 var app = express();
@@ -12,7 +17,7 @@ var app = express();
 app.set('port', (process.env.PORT || 5000))
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
-app.use(favicon(__dirname + '/src/images/favicon.ico'));
+app.use(favicon(__dirname + '/src/img/favicon.ico'));
 app.use(logger('dev'));
 app.use(stylus.middleware(
   { 
@@ -27,9 +32,7 @@ app.use(stylus.middleware(
 app.use(express.static(__dirname + '/src'));
 
 // Render homepage
-app.get('/', function(req, res) {
-  res.render('layout');
-});
+app.get('/', page.HOME);
 
 // Start listening on port
 app.listen(app.get('port'), function() {
