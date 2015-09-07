@@ -1,6 +1,6 @@
-/// <reference path="../typings/express/express.d.ts" />
+/// <reference path="../../../typings/express/express.d.ts" />
 
-// get Home page
+// get home page
 exports.HOME = function(req, res){
   res.render('home');
 };

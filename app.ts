@@ -1,7 +1,5 @@
 /// <reference path="typings/express/express.d.ts" />
 
-//tsc --watch -m commonjs -t es5 --emitDecoratorMetadata app.ts
-
 // Module dependencies
 var express = require('express'),
 	logger = require('morgan'),
@@ -13,7 +11,7 @@ var express = require('express'),
 //Initialize Express
 var app = express();
 
-// Config
+// Load config
 app.set('port', (process.env.PORT || 5000))
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
@@ -22,7 +20,7 @@ app.use(logger('dev'));
 app.use(stylus.middleware(
   { 
   	src: __dirname + '/src',
-  	compile: function compile(str, path) {
+  	compile: function (str, path) {
 	  return stylus(str)
 	    .set('filename', path)
 	    .use(nib())
@@ -31,7 +29,7 @@ app.use(stylus.middleware(
 ));
 app.use(express.static(__dirname + '/src'));
 
-// Render homepage
+// Load page
 app.get('/', page.HOME);
 
 // Start listening on port
