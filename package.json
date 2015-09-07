@@ -1,13 +1,44 @@
 {
   "name": "goanconvention2016",
-  "author": "Pooja Sardesai",
-  "email": "pmsardes@gmail.com",
+  "author": {
+    "name": "Pooja Sardesai",
+    "email": "pmsardes@gmail.com"
+  },
   "version": "1.0.0",
-  "main": "main.js",
-  "repository": 
-  {
+  "main": "app.js",
+  "private": true,
+  "repository": {
     "type": "git",
     "url": "https://github.com/pmsardesai/gc2016.git"
   },
-  "private": true
+  "scripts": {
+    "start": "node --harmony app.js"
+  },
+  "dependencies": {
+    "angular2": "2.0.0-alpha.36",
+    "express": "^4.13.3",
+    "jade": "*",
+    "morgan": "1.6.1",
+    "nib": "*",
+    "serve-favicon": "2.3.0",
+    "stylus": "*"
+  },
+  "devDependencies": {
+    "tsd": "^0.6.4",
+    "typescript": "^1.5.3"
+  },
+  "engines": {
+    "node": "0.12.7",
+    "npm": "2.11.3"
+  },
+  "keywords": [
+    "angular2",
+    "express",
+    "heroku",
+    "jade",
+    "nib",
+    "node",
+    "stylus",
+    "typescript"
+  ]
 }
