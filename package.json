@@ -15,30 +15,36 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "angular2": "2.0.0-alpha.36",
     "express": "^4.13.3",
-    "jade": "*",
     "morgan": "1.6.1",
     "nib": "*",
+    "react": "^0.13.3",
     "serve-favicon": "2.3.0",
     "stylus": "*"
-  },
-  "devDependencies": {
-    "tsd": "^0.6.4",
-    "typescript": "^1.5.3"
   },
   "engines": {
     "node": "0.12.7",
     "npm": "2.11.3"
   },
   "keywords": [
-    "angular2",
+    "babel",
+    "babelify",
+    "browserify",
     "express",
+    "gulp",
     "heroku",
-    "jade",
     "nib",
     "node",
-    "stylus",
-    "typescript"
-  ]
+    "react",
+    "stylus"
+  ],
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babelify": "^6.3.0",
+    "browserify": "^11.0.1",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-stylus": "^2.0.6",
+    "nodemon": "^1.4.1"
+  }
 }

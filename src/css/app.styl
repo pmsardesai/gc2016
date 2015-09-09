@@ -1,14 +1,28 @@
+// MIXINS
+@import 'mixins.styl'
+
+// VARIABLES
+headerHeight = 60px;
+
 body
 	margin 0px
+
+// HEADER
+.header {
+	height headerHeight
+	absPos(0, 0, null, 0)
+	
+	.text {
+		text-align center
+	}
+}
 
 // FOOTER
 .footer {
 	background-color black
 	height 20px
-	position absolute
-	bottom 0
-	width 100%
-    
+	absPos(null, 0, 0, 0)
+
 	.text {
 		color white
 		text-align center
@@ -16,6 +30,13 @@ body
 		padding-top 2px
 	}
 }
-	
+
+// CONTENT
+.content {
+	absPos(headerHeight, 200px, 0, 0)
+}
+
+// MENU
+@import 'menu.styl'
 
     

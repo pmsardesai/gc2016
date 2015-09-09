@@ -1,1 +1,1 @@
-# gc2016
+# Website for the 2016 Goan Convention
