@@ -11,7 +11,7 @@ var babelify = require('babelify'),
 // compile jsx source code
 gulp.task('build:jsx', function () {
 	var bundle = browserify({
-		entries: './src/scripts/client.jsx',
+		entries: './src/client.jsx',
 		extensions: ['.jsx'],
 		debug: true,
 		transform: [babelify]
@@ -23,9 +23,9 @@ gulp.task('build:jsx', function () {
 
 // compile stylus source code
 gulp.task('build:styl', function() {
-	return gulp.src('./scr/css/app.styl')
+	return gulp.src('./public/styles/app.styl')
 		.pipe(stylus({use: nib(), compress: true}))
-		.pipe(gulp.dest('./build/app.css'));
+		.pipe(gulp.dest('./build'));
 });
 
 // default gulp task to run
