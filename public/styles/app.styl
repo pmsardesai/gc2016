@@ -10,10 +10,23 @@ body
 // HEADER
 .header {
 	height headerHeight
+	border-bottom 1px solid black
 	absPos(0, 0, null, 0)
 	
 	.text {
-		text-align center
+		text-align left
+		font-size 40px
+		font-family 'PT Sans Narrow', sans-serif
+		padding 5px 10px
+	    display: inline-block;
+	}
+	
+	.main-menu-button {
+		border-left 1px solid black
+		height 100%
+		width headerHeight
+	    display: inline-block;
+    	float: right;
 	}
 }
 

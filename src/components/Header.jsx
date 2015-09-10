@@ -4,8 +4,11 @@ import Text from './Simple/Text';
 export default React.createClass({
 	render() {
 		return (
-			<div className='footer'>
-				<Text>Copyright © 2015. All rights reserved. Website designed by Pooja Sardesai.</Text>
+			<div className='header'>
+				<Text>Goan Convention 2016</Text>
+				<div className='main-menu-button'>
+
+				</div>
 			</div>
 		);
 	}
