@@ -1,9 +1,7 @@
 // Module dependencies
 var express = require('express'), 
-	logger = require('morgan'), 
 	favicon = require('serve-favicon'), 
-	stylus = require('stylus'), 
-	nib = require('nib'), 
+	logger = require('morgan'), 
     path = require('path');
 
 //Initialize Express

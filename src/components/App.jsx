@@ -1,7 +1,10 @@
 import React from 'react';
+import Footer from './Footer';
 
 export default React.createClass({
 	render() {
-		return <div>this works</div>;
+		return (
+			<Footer />
+		);
 	}
 });

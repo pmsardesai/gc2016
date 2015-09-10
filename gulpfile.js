@@ -1,12 +1,12 @@
-var babelify = require('babelify'),	
+var babel = require('gulp-babel'),
+	babelify = require('babelify'),	
 	browserify = require('browserify'),
 	fs = require('fs'),
 	gulp = require('gulp'),
-	babel = require('gulp-babel'),
-	stylus = require('gulp-stylus'),
 	nib = require('nib'),
 	nodemon = require('nodemon'),
-	path = require('path');
+	path = require('path'),
+	stylus = require('gulp-stylus');
  
 // compile jsx source code
 gulp.task('build:jsx', function () {
