@@ -44,6 +44,7 @@
     "browserify": "^11.0.1",
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.1",
+    "gulp-nodemon": "^2.0.4",
     "gulp-stylus": "^2.0.6",
     "nodemon": "^1.4.1"
   }

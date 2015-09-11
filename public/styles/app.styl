@@ -3,37 +3,59 @@
 
 // VARIABLES
 headerHeight = 60px;
+footerHeight = 20px;
 
 body
 	margin 0px
 
 // HEADER
 .header {
-	height headerHeight
-	border-bottom 1px solid black
 	absPos(0, 0, null, 0)
+	height headerHeight
+	background-color black
+	border-bottom 1px solid black
+	color white
+	opacity 0.8
 	
 	.text {
-		text-align left
 		font-size 40px
 		font-family 'PT Sans Narrow', sans-serif
-		padding 5px 10px
-	    display: inline-block;
+		padding 3px
+		display inline-block
 	}
 	
-	.main-menu-button {
-		border-left 1px solid black
-		height 100%
-		width headerHeight
-	    display: inline-block;
-    	float: right;
+	.main-menu-container {
+		absPos(0, 0, 0, null)
+		padding 8px 15px
+
+		.text {
+			font-size 16px
+			display inline-block
+			vertical-align middle
+		}
+		
+		.button {
+			padding 5px
+			vertical-align middle
+			background-color transparent
+			color white
+			border none
+			cursor pointer
+		}
+		.button:focus {
+			outline 0
+		}
+		.button:hover
+		.button:active {
+			opacity 0.8
+		}
 	}
 }
 
 // FOOTER
 .footer {
 	background-color black
-	height 20px
+	height footerHeight
 	absPos(null, 0, 0, 0)
 
 	.text {

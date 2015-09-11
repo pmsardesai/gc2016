@@ -4,10 +4,12 @@ var babel = require('gulp-babel'),
 	fs = require('fs'),
 	gulp = require('gulp'),
 	nib = require('nib'),
-	nodemon = require('nodemon'),
+	nodemon = require('gulp-nodemon'),
 	path = require('path'),
 	stylus = require('gulp-stylus');
  
+var sourceCode = 'src/components/**/*.js'
+
 // compile jsx source code
 gulp.task('build:jsx', function () {
 	var bundle = browserify({
@@ -28,5 +30,5 @@ gulp.task('build:styl', function() {
 		.pipe(gulp.dest('./build'));
 });
 
-// default gulp task to run
-gulp.task('all', ['build:jsx', 'build:styl']);
+// default gulp task to compile both jsx and styl files
+gulp.task('compile', ['build:jsx', 'build:styl']);

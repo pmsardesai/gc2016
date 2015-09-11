@@ -9,16 +9,16 @@ export default React.createClass({
 	},
 
 	render() {
-		let baseClass = 'text';
+		let baseClass = 'button';
 
 		let className = baseClass 
 			+ (this.props.customCss 
 				? ' ' + this.props.customCss : '');
-			
+
 		return (
-			<div className={className}>
+			<button className={className}>
 				{this.props.children}
-			</div>
+			</button>
 		);
 	}
 });
