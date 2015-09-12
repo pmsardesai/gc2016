@@ -5,30 +5,56 @@ var babel = require('gulp-babel'),
 	gulp = require('gulp'),
 	nib = require('nib'),
 	nodemon = require('gulp-nodemon'),
-	path = require('path'),
 	stylus = require('gulp-stylus');
  
-var sourceCode = 'src/components/**/*.js'
+// ********** config **********
+var config = {
+	start: 'app.js',
+	entry: './src/client.jsx',
+	bundlePath: 'build/bundle.js',
+	styles: {
+		src: './public/styles/app.styl',
+		dest: './build'
+	},
+	watch : {
+		jsx: 'src/**/**/**/*.jsx',
+		styl: 'public/styles/**/*.styl'
+	}
+};
 
+// ********** compile **********
 // compile jsx source code
 gulp.task('build:jsx', function () {
 	var bundle = browserify({
-		entries: './src/client.jsx',
+		entries: config.entry,
 		extensions: ['.jsx'],
 		debug: true,
 		transform: [babelify]
 	});
 
 	return bundle.bundle()
-		.pipe(fs.createWriteStream(path.join(__dirname, 'build', 'bundle.js'), 'utf8'));
+		.pipe(fs.createWriteStream(config.bundlePath, 'utf8'));
 });
 
 // compile stylus source code
 gulp.task('build:styl', function() {
-	return gulp.src('./public/styles/app.styl')
+	return gulp.src(config.styles.src)
 		.pipe(stylus({use: nib(), compress: true}))
-		.pipe(gulp.dest('./build'));
+		.pipe(gulp.dest(config.styles.dest));
 });
 
-// default gulp task to compile both jsx and styl files
-gulp.task('compile', ['build:jsx', 'build:styl']);
+// ********** watch **********
+// watch for any changes
+gulp.task('watch', function() {
+	nodemon({
+		script: config.start,
+		ext:['js css'] // if any changes to js or css, compile
+	})
+	.on('restart', function() {
+		console.log('Restarted!')
+	});
+
+	// watch for any changes in jsx or styl files
+	gulp.watch(config.watch.jsx, ['build:jsx']);
+	gulp.watch(config.watch.styl, ['build:styl']);
+});
