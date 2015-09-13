@@ -1,0 +1,25 @@
+// FOOTER
+.footer {
+	background-color mainColour
+	height footerHeight
+	width 100%
+	absolute bottom
+
+	.label {
+		color white
+		text-align center
+		font-size 10px
+		padding-top 3px
+	}
+}
+
+// style when menu is pinned
+.mainApp.pinned {
+	.footer {
+		.label {
+			@media phone {
+				display none
+			}
+		}
+	}
+}

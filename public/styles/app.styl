@@ -1,81 +1,55 @@
-// MIXINS
-@import 'mixins.styl'
+@import 'nib'
 
 // VARIABLES
 headerHeight = 60px;
 footerHeight = 20px;
+menuWidth = 250px;
 
-body
-	margin 0px
-	
-button 
+mainColour = #202020;
+PTSansNarrow = 'PT Sans Narrow', sans-serif;
+
+// MOBILE
+phone = "(max-width: 480px)";
+
+
+// DEFAULT STYLE FOR BUTTON
+.button 
 	border none
 	cursor pointer
 	background-color transparent
 	outline none
-
-// HEADER
-.header {
-	absPos(0, 0, null, 0)
-	height headerHeight
-	background-color black
-	border-bottom 1px solid black
+	white-space nowrap
 	color white
-	opacity 0.8
+	font-family PTSansNarrow
+
+.button:hover, 
+.button:active 
+	color #DCDCDC
+
+// MAIN APP
+body
+	margin 0px
+	font-family PTSansNarrow
 	
-	.label {
-		font-size 40px
-		font-family 'PT Sans Narrow', sans-serif
-		padding 3px
-		display inline-block
-	}
+.mainApp {
+	absolute top 0 bottom 0 left 0 right 0
+	transition right 500ms
+}
+.mainApp.pinned {
+	right menuWidth
 	
-	.main-menu-container {
-		absPos(0, 0, 0, null)
-		padding 8px 15px
-
-		.label {
-			font-size 16px
-			display inline-block
-			vertical-align middle
-		}
-		
-		.button {
-			padding 5px
-			vertical-align middle
-			background-color transparent
-			color white
-		}
-		.button:focus {
-			outline 0
-		}
-		.button:hover
-		.button:active {
-			opacity 0.8
+	.header .label {
+		@media phone {
+			font-size 30px
+			padding-top 10px
+			overflow hidden
 		}
 	}
 }
 
-// FOOTER
-.footer {
-	background-color black
-	height footerHeight
-	absPos(null, 0, 0, 0)
-
-	.label {
-		color white
-		text-align center
-		font-size small
-		padding-top 2px
-	}
-}
-
-// CONTENT
-.content {
-	absPos(headerHeight, 200px, 0, 0)
-}
-
-// MENU
+@import 'header.styl'
+@import 'footer.styl'
+@import 'content.styl'
 @import 'menu.styl'
 
     

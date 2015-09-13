@@ -15,12 +15,9 @@
   	},
 
   	"rules": {
-	    // disable requiring trailing commas
 	    "comma-dangle": 0,
-      
-      // no need to worry about this
       "react/jsx-quotes": 0,
-      
-      "indent": [2, "tab"]
+      "indent": [2, "tab"],
+      "no-trailing-spaces": 0
   	}
 }

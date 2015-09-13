@@ -14,7 +14,7 @@ class Header extends React.Component {
 		return (
 			<div className='header'>
 				<Label text="Goan Convention 2016" />
-				<div className='main-menu-container'>
+				<div className='menu-button-container'>
 					<Label text="MENU" />
 					<Button
 						customCss="fa fa-bars fa-2x"

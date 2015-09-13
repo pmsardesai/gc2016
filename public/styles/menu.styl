@@ -1,21 +1,23 @@
 // MENU
 .menu-container {
-	absPos(0, 0, footerHeight, null)
-	width 0px
+	fixed top 0 right 0 bottom 0
+	width 0
+	transition width 500ms
+	border-left 1px solid white
+	background-color mainColour
+	overflow-y auto
+	overflow-x hidden
 	
-	.menu-container .button {
+	.button {
 		display block
 		width 100%
 		height headerHeight
-		border-bottom 1px solid white
+		background-color mainColour
+		font-size 32px
 	}
 }
-.menu-container.pinned {
-	width 200px
-	background-color red
-}
 
-.menu-container button {
-	width 200px
-	background-color red
+// style when menu is pinned
+.mainApp.pinned .menu-container {
+	width menuWidth
 }

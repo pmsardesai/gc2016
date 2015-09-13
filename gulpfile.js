@@ -58,9 +58,6 @@ gulp.task('watch', function() {
 	nodemon({
 		script: config.start,
 		ext:['js css'] // if any changes to js or css, compile
-	})
-	.on('restart', function() {
-		console.log('Restarted!')
 	});
 
 	// watch for any changes in jsx or styl files

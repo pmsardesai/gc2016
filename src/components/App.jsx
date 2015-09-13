@@ -4,37 +4,33 @@ import Header from './Header';
 import MenuContainer from './MenuContainer';
 
 class App extends React.Component {
-	static propTypes = {
+	constructor(props) {
+		super(props);
+
 		/*
 		* The state of the menu. It can be 'pinned' or 'unpinned'.
 		* Default: 'unpinned'
 		*/
-		menuState: React.PropTypes.oneOf(['pinned', 'unpinned'])
-	}
-
-	static defaultProps = {
-		menuState: 'unpinned'
+		this.state = {menuState: 'unpinned'};
 	}
 
 	/*
-  	* When the menu button is clicked, toggle the state.
+  	* When the menu button is clicked, toggle the state of menu.
   	*/
 	onMenuStateChanged() {
-		this.props.menuState =
-			this.props.menuState === 'unpinned' ? 'pinned' : 'unpinned';
-	}
-
-	onMenuItemChanged() {
-
+		this.setState({
+			menuState: this.state.menuState === 'unpinned' ? 'pinned' : 'unpinned'
+		});
 	}
 
 	render() {
-		return (
-			<div>
-				<Header onClick={this.onMenuStateChanged} />
-				<Footer />
+		const className = 'mainApp ' + this.state.menuState;
 
-				<MenuContainer state={this.props.menuState} />
+		return (
+			<div className={className}>
+				<Header onClick={this.onMenuStateChanged.bind(this)} />
+				<Footer />
+				<MenuContainer />
 			</div>
 		);
 	}

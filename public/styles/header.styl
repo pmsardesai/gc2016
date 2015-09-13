@@ -1,0 +1,50 @@
+// HEADER
+.header {
+	height headerHeight
+	background-color mainColour
+	border-bottom 1px solid black
+	color white
+	
+	.label {
+		font-size 40px
+		padding 3px 3px 3px 10px
+		display inline-block
+		
+		@media phone {
+			font-size 30px
+			padding-top 10px
+			overflow hidden
+		}
+	}
+	
+	.menu-button-container {
+		absolute top 0 right 0 bottom 0
+		padding 8px 15px
+
+		.label {
+			font-size 16px
+			display inline-block
+			vertical-align middle
+			
+			@media phone {
+				display none
+			}
+		}
+		
+		.button {
+			padding 5px
+			vertical-align middle
+		}
+	}
+}
+
+// style when menu is pinned
+.mainApp.pinned {
+	.header {
+		.label {
+			@media phone {
+				display none
+			}
+		}
+	}
+}
