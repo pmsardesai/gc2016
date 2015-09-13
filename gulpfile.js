@@ -1,6 +1,7 @@
 var babel = require('gulp-babel'),
 	babelify = require('babelify'),	
 	browserify = require('browserify'),
+	eslint = require('gulp-eslint'),
 	fs = require('fs'),
 	gulp = require('gulp'),
 	nib = require('nib'),
@@ -22,21 +23,29 @@ var config = {
 	}
 };
 
+// ********** lint **********
+// Lint all JSX files
+gulp.task('build:lint', function() {
+  return gulp.src(config.watch.jsx)
+    .pipe(eslint())
+    .pipe(eslint.format());
+});
+
 // ********** compile **********
-// compile jsx source code
+// Compile JSX files
 gulp.task('build:jsx', function () {
 	var bundle = browserify({
 		entries: config.entry,
 		extensions: ['.jsx'],
 		debug: true,
-		transform: [babelify]
+		transform: [babelify.configure({ optional: ["es7.classProperties"]})] // so that we can define static propTypes inside class
 	});
 
 	return bundle.bundle()
 		.pipe(fs.createWriteStream(config.bundlePath, 'utf8'));
 });
 
-// compile stylus source code
+// Compile STYL files
 gulp.task('build:styl', function() {
 	return gulp.src(config.styles.src)
 		.pipe(stylus({use: nib(), compress: true}))
@@ -44,7 +53,7 @@ gulp.task('build:styl', function() {
 });
 
 // ********** watch **********
-// watch for any changes
+// Watch for any changes
 gulp.task('watch', function() {
 	nodemon({
 		script: config.start,
@@ -55,6 +64,6 @@ gulp.task('watch', function() {
 	});
 
 	// watch for any changes in jsx or styl files
-	gulp.watch(config.watch.jsx, ['build:jsx']);
+	gulp.watch(config.watch.jsx, ['build:lint', 'build:jsx']);
 	gulp.watch(config.watch.styl, ['build:styl']);
 });

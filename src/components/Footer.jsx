@@ -1,12 +1,14 @@
 import React from 'react';
-import Text from './Simple/Text';
+import Label from './Simple/Label';
 
-export default React.createClass({
+class Footer extends React.Component {
 	render() {
 		return (
 			<div className='footer'>
-				<Text>Copyright © 2015. Website designed by Pooja Sardesai.</Text>
+				<Label text='Copyright © 2015. Website designed by Pooja Sardesai.' />
 			</div>
 		);
 	}
-});
+}
+
+export default Footer;

@@ -40,10 +40,15 @@
   ],
   "devDependencies": {
     "babel": "^5.8.23",
+    "babel-eslint": "^4.1.1",
     "babelify": "^6.3.0",
     "browserify": "^11.0.1",
+    "eslint": "^1.4.1",
+    "eslint-config-airbnb": "0.0.8",
+    "eslint-plugin-react": "^3.3.2",
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.1",
+    "gulp-eslint": "^1.0.0",
     "gulp-nodemon": "^2.0.4",
     "gulp-stylus": "^2.0.6",
     "nodemon": "^1.4.1"

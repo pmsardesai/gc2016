@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Button extends React.Component {
+class Text extends React.Component {
 	static propTypes = {
 		/*
 		* Custom class name.
@@ -8,31 +8,24 @@ class Button extends React.Component {
 		customCss: React.PropTypes.string,
 
 		/*
-		* The click handler.
-		*/
-		onClick: React.PropTypes.func,
-
-		/*
-		* The text to put inside the button.
+		* The text to set in the label.
 		*/
 		text: React.PropTypes.string
 	}
 
 	render() {
-		const baseClass = 'button';
+		const baseClass = 'label';
 
 		const className = baseClass
 			+ (this.props.customCss
 				? ' ' + this.props.customCss : '');
 
 		return (
-			<button
-				className={className}
-				onClick={this.props.onClick}>
+			<div className={className}>
 				{this.props.text}
-			</button>
+			</div>
 		);
 	}
 }
 
-export default Button;
+export default Text;

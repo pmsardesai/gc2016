@@ -1,17 +1,29 @@
 import React from 'react';
-import Text from './Simple/Text';
 import Button from './Simple/Button';
+import Label from './Simple/Label';
 
-export default React.createClass({
+class Header extends React.Component {
+	static propTypes = {
+		/*
+		* The click event handler.
+		*/
+		onClick: React.PropTypes.funct
+	}
+
 	render() {
 		return (
 			<div className='header'>
-				<Text>Goan Convention 2016</Text>
+				<Label text="Goan Convention 2016" />
 				<div className='main-menu-container'>
-					<Text>MENU</Text>
-					<Button customCss="fa fa-bars fa-2x"></Button>
+					<Label text="MENU" />
+					<Button
+						customCss="fa fa-bars fa-2x"
+						onClick={this.props.onClick}
+					/>
 				</div>
 			</div>
 		);
 	}
-});
+}
+
+export default Header;

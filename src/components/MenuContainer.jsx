@@ -1,22 +1,42 @@
 import React from 'react';
+import Button from './Simple/Button';
 
-export default React.createClass({
-	propTypes: {
+class MenuContainer extends React.Component {
+	static propTypes = {
 		/*
-		* The state of the menu. It can be pinned or unpinned.
+		* The state of the menu. It can be 'pinned' or 'unpinned'.
 		* Default: 'unpinned'
 		*/
-		state: React.PropTypes.string
-	},
+		menuState: React.PropTypes.oneOf(['pinned', 'unpinned'])
+	}
 
 	render() {
-		let baseClass = 'menu-container';
+		const baseClass = 'menu-container';
 
-		let className = baseClass 
-			+ (this.props.state === 'pinned' ? ' pinned' : '');
+		const className = baseClass
+			+ (this.props.menuState === 'pinned' ? ' pinned' : ' unpinned');
+
+		const menuItems =
+		['Home',
+		'Schedule',
+		'Sponsors',
+		'Venue',
+		'Team',
+		'Past Events',
+		'Attendees'];
+
+		const rows = [];
+
+		menuItems.forEach(function eachMenuItem(item) {
+			rows.push(<Button text={item} />);
+		});
 
 		return (
-			<div className='menu-container'></div>
+			<div className={className}>
+				{rows}
+			</div>
 		);
 	}
-});
+}
+
+export default MenuContainer;
