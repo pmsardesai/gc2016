@@ -1,4 +1,66 @@
-// CONTENT
+// Container - the main container that hosts all the pages
 .content {
-	absPos(headerHeight, 200px, 0, 0)
+	absolute top headerHeight bottom footerHeight left 0 right 0
+	
+	.content-inner {
+		width 100%
+	}
+}
+
+@media phoneLandscape {
+	.main-app.pinned .content .content-inner {
+		display none;
+	}
+}
+
+// Home
+.home {
+	background-image url('static/images/home-background.png')
+	background-size cover
+	background-position center 0
+	absolute top 0
+	color white
+	text-align center
+	
+	.content-inner {
+		absolute top 50% left 50%
+		height 500px
+		width 600px
+		margin-top -250px
+		margin-left -300px
+	
+		.tagline {
+			font-size 35px
+		    padding 20px 0px
+		}
+
+		.event-details {
+			padding 20px 0px
+			background rgba(0, 0, 0, 0.5)
+			width 350px
+			margin 20px auto
+			
+			.title {
+				font-size 30px
+			}
+		}
+		
+		.button-container {
+			padding-top 30px
+			width 300px
+			margin 0 auto
+
+			.button {
+				background #00ABFC
+				border-radius 2px
+				height 40px
+				width 120px
+			    font-size 20px
+			}
+			
+			.register-button {
+				margin-right 10px
+			}
+		}
+	}
 }

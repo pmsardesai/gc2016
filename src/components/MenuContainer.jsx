@@ -1,24 +1,38 @@
 import React from 'react';
 import Button from './Simple/Button';
 
+/* 
+* This collapsible menu is used on tablets and smartphones.
+*/
 class MenuContainer extends React.Component {
-	render() {
-		const baseClass = 'menu-container';
+	static propTypes = {
+		/*
+		* Event handler that toggles the state of the menu
+		*/
+		onToggleMenuState: React.PropTypes.func,
 
-		const className = baseClass;
-		
-		const menuItems =
-		['Home',
-		'Schedule',
-		'Sponsors',
-		'Venue',
-		'Team',
-		'Past Events',
-		'Attendees'];
+		/*
+		* The list of pages to display
+		*/
+		pages: React.PropTypes.array,
+
+		/*
+		* The type of menu. Can be either 'mobile' or 'web'.
+		*/
+		type: React.PropTypes.string
+	}
+
+	render() {
+		const baseClass = 'menu-container ' + 
+							(this.props.type === 'mobile' ? 'mobile' : 'web');
 
 		return (
-			<div className={className}>
-				{ menuItems.map(i => <Button text={i} />) }
+			<div className={baseClass}>
+				{ this.props.pages.map(p => (
+					<Button 
+						text={p}
+						onClick={this.props.onToggleMenuState} />
+				))}
 			</div>
 		);
 	}

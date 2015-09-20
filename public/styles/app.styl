@@ -1,6 +1,7 @@
 @import 'nib'
 
 // VARIABLES
+headerHeightInt = 60;
 headerHeight = 60px;
 footerHeight = 20px;
 menuWidth = 250px;
@@ -8,9 +9,11 @@ menuWidth = 250px;
 mainColour = #202020;
 PTSansNarrow = 'PT Sans Narrow', sans-serif;
 
+animDuration = 300ms;
+
 // MOBILE
 phone = "(max-width: 480px)";
-
+phoneLandscape = "(max-width: 640px)";
 
 // DEFAULT STYLE FOR BUTTON
 .button 
@@ -31,19 +34,13 @@ body
 	margin 0px
 	font-family PTSansNarrow
 	
-.mainApp {
+.main-app
 	absolute top 0 bottom 0 left 0 right 0
-	transition right 500ms
-}
-.mainApp.pinned {
-	right menuWidth
-	
-	.header .label {
-		@media phone {
-			font-size 30px
-			padding-top 10px
-			overflow hidden
-		}
+	transition right animDuration
+
+@media phoneLandscape {
+	.main-app.pinned {
+		right menuWidth
 	}
 }
 

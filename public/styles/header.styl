@@ -1,50 +1,39 @@
 // HEADER
 .header {
 	height headerHeight
-	background-color mainColour
 	border-bottom 1px solid black
 	color white
-	
-	.label {
-		font-size 40px
-		padding 3px 3px 3px 10px
-		display inline-block
-		
-		@media phone {
-			font-size 30px
-			padding-top 10px
-			overflow hidden
-		}
-	}
-	
-	.menu-button-container {
-		absolute top 0 right 0 bottom 0
-		padding 8px 15px
+	position relative
+	background: rgba(0, 0, 0, 0.60);
+	z-index 1
 
-		.label {
-			font-size 16px
+	.header-content {
+		.logo {
 			display inline-block
-			vertical-align middle
-			
-			@media phone {
-				display none
-			}
+			background-image url('static/images/logo.png')
+			background-size cover
+			width 170px
+			height headerHeight
+			position absolute
 		}
 		
-		.button {
-			padding 5px
-			vertical-align middle
+		.menu-button {
+			display none
+		}
+
+		@media phoneLandscape {
+			.menu-button {
+				absolute top 0 right 0
+				padding 14px 20px
+				vertical-align middle
+				display block
+			}
 		}
 	}
 }
 
-// style when menu is pinned
-.mainApp.pinned {
-	.header {
-		.label {
-			@media phone {
-				display none
-			}
-		}
+@media phoneLandscape {
+	.main-app.pinned .logo {
+		display none
 	}
 }

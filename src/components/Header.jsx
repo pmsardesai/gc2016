@@ -1,23 +1,24 @@
 import React from 'react';
 import Button from './Simple/Button';
 import Label from './Simple/Label';
+import MenuContainer from './MenuContainer';
 
 class Header extends React.Component {
 	static propTypes = {
 		/*
 		* The click event handler.
 		*/
-		onClick: React.PropTypes.funct
+		onClick: React.PropTypes.func
 	}
 
 	render() {
 		return (
 			<div className='header'>
-				<Label text="Goan Convention 2016" />
-				<div className='menu-button-container'>
-					<Label text="MENU" />
+				<div className='header-content'>
+					<Label customCss='logo' text='' />
+					<MenuContainer type='web' pages={this.props.pages} />
 					<Button
-						customCss="fa fa-bars fa-2x"
+						customCss="menu-button fa fa-bars fa-2x"
 						onClick={this.props.onClick}
 					/>
 				</div>
