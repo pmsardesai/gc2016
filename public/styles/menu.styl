@@ -1,5 +1,5 @@
 // ********* Web version *********
-.menu-container.web {
+.menu-bar.web {
 	display inline-block
 	absolute right 0
 	height 100%
@@ -15,20 +15,20 @@
 // as the width of browser decreases, reduce font/padding on buttons
 reducePadding = "(max-width: 800px)";
 @media reducePadding {
-	.menu-container.web .button {
+	.menu-bar.web .button {
 		padding 1px 10px
 	}
 }
 reduceFontPadding = "(max-width: 750px)";
 @media reduceFontPadding {
-	.menu-container.web .button {
+	.menu-bar.web .button {
 		padding 1px 8px
 		font-size 17px
 	}
 }
 
 // ********* Mobile version *********
-.menu-container.mobile {
+.menu-bar.mobile {
 	fixed top 0 right 0 bottom 0
 	width 0
 	transition all animDuration
@@ -47,16 +47,16 @@ reduceFontPadding = "(max-width: 750px)";
 }
 
 // style when menu is pinned
-.main-app.pinned .menu-container.mobile {
+.main-app.pinned .menu-bar.mobile {
 	width menuWidth
 }
 
 // In phone mode, hide web version and display mobile version
 @media phoneLandscape {
-	.menu-container.web {
+	.menu-bar.web {
 		display none
 	}
-	.menu-container.mobile { 
+	.menu-bar.mobile { 
 		display block 
 	}
 }

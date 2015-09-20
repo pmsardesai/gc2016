@@ -2,7 +2,7 @@ import React from 'react';
 import Content from './Content';
 import Footer from './Footer';
 import Header from './Header';
-import MenuContainer from './MenuContainer';
+import MenuBar from './MenuBar';
 
 class App extends React.Component {
 	constructor(props) {
@@ -47,7 +47,7 @@ class App extends React.Component {
 				<Header onClick={this.onToggleMenuState.bind(this)} pages={pages} />
 				<Content selectedPage={this.state.currentPage} />
 				<Footer />
-				<MenuContainer type='mobile' pages={pages} onToggleMenuState={this.onToggleMenuState.bind(this)} />
+				<MenuBar type='mobile' pages={pages} onToggleMenuState={this.onToggleMenuState.bind(this)} />
 			</div>
 		);
 	}

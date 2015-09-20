@@ -4,7 +4,7 @@ import Button from './Simple/Button';
 /* 
 * This collapsible menu is used on tablets and smartphones.
 */
-class MenuContainer extends React.Component {
+class MenuBar extends React.Component {
 	static propTypes = {
 		/*
 		* Event handler that toggles the state of the menu
@@ -23,7 +23,7 @@ class MenuContainer extends React.Component {
 	}
 
 	render() {
-		const baseClass = 'menu-container ' + 
+		const baseClass = 'menu-bar ' + 
 							(this.props.type === 'mobile' ? 'mobile' : 'web');
 
 		return (
@@ -38,4 +38,4 @@ class MenuContainer extends React.Component {
 	}
 }
 
-export default MenuContainer;
+export default MenuBar;

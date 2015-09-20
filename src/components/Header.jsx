@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Simple/Button';
 import Label from './Simple/Label';
-import MenuContainer from './MenuContainer';
+import MenuBar from './MenuBar';
 
 class Header extends React.Component {
 	static propTypes = {
@@ -16,7 +16,7 @@ class Header extends React.Component {
 			<div className='header'>
 				<div className='header-content'>
 					<Label customCss='logo' text='' />
-					<MenuContainer type='web' pages={this.props.pages} />
+					<MenuBar type='web' pages={this.props.pages} />
 					<Button
 						customCss="menu-button fa fa-bars fa-2x"
 						onClick={this.props.onClick}
