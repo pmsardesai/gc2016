@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../Simple/Button';
+import { Link } from 'react-router';
 import Label from '../Simple/Label';
 
 class Home extends React.Component {
@@ -18,8 +18,8 @@ class Home extends React.Component {
 						<Label customCss='address' text="Address and Postal Code" />
 					</div>
 					<div className='button-container'>
-						<Button customCss='register-button' text='Register' />
-						<Button customCss='donate-button' text='Donate' />
+						<Link className='register-button'>Register</Link>
+						<Link className='donate-button'>Donate</Link>
 					</div>
 				</div>
 			</div>

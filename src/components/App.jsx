@@ -1,10 +1,16 @@
 import React from 'react';
-import Content from './Content';
 import Footer from './Footer';
 import Header from './Header';
 import MenuBar from './MenuBar';
 
 class App extends React.Component {
+	static propTypes = {
+		/*
+		* The list of different routes.
+		*/
+		children: React.PropTypes.array
+	}
+
 	constructor(props) {
 		super(props);
 
@@ -27,27 +33,15 @@ class App extends React.Component {
 		});
 	}
 
-	/*
-  	* When the menu item is clicked, navigate to the selected page.
-  	*/
-	onSelectedMenuItemChanged(item) {
-		this.setState( {
-			menuState: 'unpinned', // unpin menu
-			currentPage: item
-		});
-	}
-
 	render() {
 		const className = 'main-app ' + this.state.menuState;
 
-		const pages = ['Home', 'Schedule', 'Committee', 'Sponsors', 'Contests', 'Gallery', 'Past Events'];
-
 		return (
 			<div className={className}>
-				<Header onClick={this.onToggleMenuState.bind(this)} pages={pages} />
-				<Content selectedPage={this.state.currentPage} />
+				<Header onClick={this.onToggleMenuState.bind(this)} />
+				{ this.props.children }
 				<Footer />
-				<MenuBar type='mobile' pages={pages} onToggleMenuState={this.onToggleMenuState.bind(this)} />
+				<MenuBar type='mobile' />
 			</div>
 		);
 	}

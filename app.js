@@ -12,7 +12,6 @@ app.set('port', (process.env.PORT || 5000));
 app.use(favicon(path.join(__dirname , 'public', 'images', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(express.static(path.join(__dirname, 'build')));
-app.use('/static', express.static(path.join(__dirname, 'public')));
 
 // Start listening on port
 app.listen(app.get('port'), function () {

@@ -11,11 +11,13 @@ PTSansNarrow = 'PT Sans Narrow', sans-serif;
 animDuration = 300ms;
 
 // MOBILE
-phone = "(max-width: 480px)";
-phoneLandscape = "(max-width: 640px)";
+phone = "(max-width: 640px)";
+phonePortrait = "(max-width: 640px) and (orientation: portrait)";
+phoneLandscape = "(max-width: 640px) and (orientation: landscape)";
+minHeight = "(max-height: 360px)";
 
 // DEFAULT STYLE FOR BUTTON
-.button 
+button 
 	border none
 	cursor pointer
 	background-color transparent
@@ -24,20 +26,21 @@ phoneLandscape = "(max-width: 640px)";
 	color white
 	font-family PTSansNarrow
 
-.button:hover, 
-.button:active 
+button:hover, 
+button:active 
 	color #DCDCDC
 
 // MAIN APP
 body
 	margin 0px
 	font-family PTSansNarrow
+	font-size 16px
 	
 .main-app
 	absolute top 0 bottom 0 left 0 right 0
 	transition right animDuration
 
-@media phoneLandscape {
+@media phone {
 	.main-app.pinned {
 		right menuWidth
 	}

@@ -16,20 +16,20 @@
   },
   "dependencies": {
     "express": "^4.13.3",
+    "history": "^1.10.1",
     "morgan": "1.6.1",
     "nib": "*",
     "react": "^0.13.3",
+    "react-router": "^1.0.0-rc1",
     "serve-favicon": "2.3.0",
     "stylus": "*"
-  },
-  "engines": {
-    "node": "0.12.7",
-    "npm": "2.11.3"
   },
   "keywords": [
     "babel",
     "babelify",
     "browserify",
+    "browser-sync",
+    "eslint",
     "express",
     "gulp",
     "heroku",
@@ -42,6 +42,7 @@
     "babel": "^5.8.23",
     "babel-eslint": "^4.1.1",
     "babelify": "^6.3.0",
+    "browser-sync": "^2.9.6",
     "browserify": "^11.0.1",
     "eslint": "^1.4.1",
     "eslint-config-airbnb": "0.0.8",
@@ -49,6 +50,7 @@
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.1",
     "gulp-eslint": "^1.0.0",
+    "gulp-imagemin": "^2.3.0",
     "gulp-nodemon": "^2.0.4",
     "gulp-stylus": "^2.0.6",
     "nodemon": "^1.4.1"

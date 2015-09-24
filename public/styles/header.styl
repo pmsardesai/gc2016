@@ -10,20 +10,20 @@
 	.header-content {
 		.logo {
 			display inline-block
-			background-image url('static/images/logo.png')
+			background-image url('images/logo.png')
 			background-size cover
-			width 170px
+			width 150px
 			height headerHeight
-			position absolute
+			absolute left 3%
 		}
 		
-		.menu-button {
+		.hamburger-icon {
 			display none
 		}
 
-		@media phoneLandscape {
-			.menu-button {
-				absolute top 0 right 0
+		@media phone {
+			.hamburger-icon {
+				absolute top 0 right 0 bottom 0
 				padding 14px 20px
 				vertical-align middle
 				display block
@@ -32,7 +32,7 @@
 	}
 }
 
-@media phoneLandscape {
+@media phone {
 	.main-app.pinned .logo {
 		display none
 	}

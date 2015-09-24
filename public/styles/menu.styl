@@ -1,33 +1,40 @@
-// ********* Web version *********
+/*********** Menu Button ************/
+.menu-bar .menu-button {
+	color white
+	text-decoration none
+}
+.menu-bar .menu-button:hover, 
+.menu-bar .menu-button:active 
+	color #DCDCDC
+
+/********* Web version *********/
 .menu-bar.web {
 	display inline-block
 	absolute right 0
 	height 100%
 	
-	.button {
-		font-size 20px
+	.menu-button {
+		font-size 125% 
 		padding 1px 15px
-		vertical-align middle
-		height 100%
 	}
 }
 
 // as the width of browser decreases, reduce font/padding on buttons
 reducePadding = "(max-width: 800px)";
 @media reducePadding {
-	.menu-bar.web .button {
+	.menu-bar.web .menu-button {
 		padding 1px 10px
 	}
 }
 reduceFontPadding = "(max-width: 750px)";
 @media reduceFontPadding {
-	.menu-bar.web .button {
+	.menu-bar.web .menu-button {
 		padding 1px 8px
-		font-size 17px
+		font-size 106% //17px
 	}
 }
 
-// ********* Mobile version *********
+/********* Mobile version *********/
 .menu-bar.mobile {
 	fixed top 0 right 0 bottom 0
 	width 0
@@ -37,12 +44,13 @@ reduceFontPadding = "(max-width: 750px)";
 	overflow-x hidden
 	display none
 	
-	.button {
+	.menu-button {
 		display block
 		width 100%
 		height headerHeight
 		background-color mainColour
-		font-size 32px
+		font-size 200% //32px
+		text-align center
 	}
 }
 
@@ -52,7 +60,7 @@ reduceFontPadding = "(max-width: 750px)";
 }
 
 // In phone mode, hide web version and display mobile version
-@media phoneLandscape {
+@media phone {
 	.menu-bar.web {
 		display none
 	}

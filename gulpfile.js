@@ -4,21 +4,32 @@ var babel = require('gulp-babel'),
 	eslint = require('gulp-eslint'),
 	fs = require('fs'),
 	gulp = require('gulp'),
+	imagemin = require('gulp-imagemin'),
 	nib = require('nib'),
 	nodemon = require('gulp-nodemon'),
 	stylus = require('gulp-stylus');
+
+var browserSync = require('browser-sync').create();
  
 // ********** config **********
 var config = {
 	start: 'app.js',
 	entry: './src/client.jsx',
-	bundlePath: 'build/bundle.js',
+	bundleDir: './build',
+	bundleJS: 'build/bundle.js',
+	jsx: {
+		src: 'src/**/**/*.jsx'
+	},
 	styles: {
 		src: './public/styles/app.styl',
 		dest: './build'
 	},
+	images: {
+		src: './public/images/*.png',
+		dest: './build/images'
+	},
 	watch : {
-		jsx: 'src/**/**/**/*.jsx',
+		jsx: 'src/**/**/*.jsx',
 		styl: 'public/styles/**/*.styl'
 	}
 };
@@ -26,7 +37,7 @@ var config = {
 // ********** lint **********
 // Lint all JSX files
 gulp.task('build:lint', function() {
-  return gulp.src(config.watch.jsx)
+  return gulp.src(config.jsx.src)
     .pipe(eslint())
     .pipe(eslint.format());
 });
@@ -42,18 +53,25 @@ gulp.task('build:jsx', function () {
 	});
 
 	return bundle.bundle()
-		.pipe(fs.createWriteStream(config.bundlePath, 'utf8'));
+		.pipe(fs.createWriteStream(config.bundleJS, 'utf8'));
+});
+
+// Compile images
+gulp.task('build:images', function() {
+  return gulp.src(config.images.src)
+    .pipe(imagemin())
+    .pipe(gulp.dest(config.images.dest));
 });
 
 // Compile STYL files
 gulp.task('build:styl', function() {
 	return gulp.src(config.styles.src)
 		.pipe(stylus({use: nib(), compress: true}))
-		.pipe(gulp.dest(config.styles.dest));
+		.pipe(gulp.dest(config.styles.dest))
+		.pipe(browserSync.stream());
 });
 
 // ********** watch **********
-// Watch for any changes
 gulp.task('watch', function() {
 	nodemon({
 		script: config.start,
@@ -63,4 +81,20 @@ gulp.task('watch', function() {
 	// watch for any changes in jsx or styl files
 	gulp.watch(config.watch.jsx, ['build:lint', 'build:jsx']);
 	gulp.watch(config.watch.styl, ['build:styl']);
+
+	browserSync.init( {
+		server: [config.bundleDir],
+		logFileChanges: false
+	});
 });
+
+// ********** combined ************
+gulp.task('all', 
+	['build:all',
+	 'watch']);
+
+gulp.task('build:all', 
+	['build:lint',
+	 'build:jsx', 
+	 'build:images',	
+	 'build:styl']);

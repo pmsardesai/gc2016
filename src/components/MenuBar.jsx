@@ -1,21 +1,11 @@
 import React from 'react';
-import Button from './Simple/Button';
+import { Link } from 'react-router';
 
 /* 
-* This collapsible menu is used on tablets and smartphones.
+* This is a navigation bar with menu items.
 */
 class MenuBar extends React.Component {
 	static propTypes = {
-		/*
-		* Event handler that toggles the state of the menu
-		*/
-		onToggleMenuState: React.PropTypes.func,
-
-		/*
-		* The list of pages to display
-		*/
-		pages: React.PropTypes.array,
-
 		/*
 		* The type of menu. Can be either 'mobile' or 'web'.
 		*/
@@ -28,11 +18,13 @@ class MenuBar extends React.Component {
 
 		return (
 			<div className={baseClass}>
-				{ this.props.pages.map(p => (
-					<Button 
-						text={p}
-						onClick={this.props.onToggleMenuState} />
-				))}
+				<Link to="/" className='menu-button'>Home</Link>
+				<Link to="/schedule" className='menu-button'>Schedule</Link>
+				<Link to="/committee" className='menu-button'>Committee</Link>
+				<Link to="/sponsors" className='menu-button'>Sponsors</Link>
+				<Link to="/contests" className='menu-button'>Contests</Link>
+				<Link to="/gallery" className='menu-button'>Gallery</Link>
+				<Link to="/pastevents" className='menu-button'>PastEvents</Link>
 			</div>
 		);
 	}
