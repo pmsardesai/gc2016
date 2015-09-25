@@ -6,7 +6,7 @@ class Home extends React.Component {
 	render() {
 		return (
 			<div className='content home'> 
-				<div className='content-inner'>
+				<div className='home-inner'>
 					<div className='tagline'>
 						<Label customCss='hindi' text="थंड वार्यार दर्या ल्हारार, गोंया तुजी याद येता" />
 						<Label customCss='english' text="Come enjoy Goa in Southern California" />
