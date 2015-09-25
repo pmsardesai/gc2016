@@ -24,7 +24,7 @@ class MenuBar extends React.Component {
 				<Link to="/sponsors" className='menu-button'>Sponsors</Link>
 				<Link to="/contests" className='menu-button'>Contests</Link>
 				<Link to="/gallery" className='menu-button'>Gallery</Link>
-				<Link to="/pastevents" className='menu-button'>PastEvents</Link>
+				<Link to="/pastevents" className='menu-button'>Past Events</Link>
 			</div>
 		);
 	}

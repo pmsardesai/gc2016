@@ -18,8 +18,8 @@ class Home extends React.Component {
 						<Label customCss='address' text="Address and Postal Code" />
 					</div>
 					<div className='button-container'>
-						<Link className='register-button'>Register</Link>
-						<Link className='donate-button'>Donate</Link>
+						<Link to='/register' className='button register-button'>Register</Link>
+						<Link to='/sponsors' className='button donate-button'>Donate</Link>
 					</div>
 				</div>
 			</div>

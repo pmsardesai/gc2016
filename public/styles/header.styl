@@ -3,9 +3,10 @@
 	height headerHeight
 	border-bottom 1px solid black
 	color white
-	position relative
+	fixed top 0 right 0 left 0
 	background: rgba(0, 0, 0, 0.60);
 	z-index 1
+	transition all animDuration
 
 	.header-content {
 		.logo {
@@ -35,5 +36,9 @@
 @media phone {
 	.main-app.pinned .logo {
 		display none
+	}
+	
+	.main-app.pinned .header {
+		right menuWidth
 	}
 }

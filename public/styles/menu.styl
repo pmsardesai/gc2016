@@ -1,12 +1,3 @@
-/*********** Menu Button ************/
-.menu-bar .menu-button {
-	color white
-	text-decoration none
-}
-.menu-bar .menu-button:hover, 
-.menu-bar .menu-button:active 
-	color #DCDCDC
-
 /********* Web version *********/
 .menu-bar.web {
 	display inline-block
@@ -15,7 +6,7 @@
 	
 	.menu-button {
 		font-size 125% 
-		padding 1px 15px
+		padding 15px
 	}
 }
 
@@ -23,13 +14,13 @@
 reducePadding = "(max-width: 800px)";
 @media reducePadding {
 	.menu-bar.web .menu-button {
-		padding 1px 10px
+		padding 15px 10px
 	}
 }
 reduceFontPadding = "(max-width: 750px)";
 @media reduceFontPadding {
 	.menu-bar.web .menu-button {
-		padding 1px 8px
+		padding 18px 8px
 		font-size 106% //17px
 	}
 }
@@ -45,9 +36,9 @@ reduceFontPadding = "(max-width: 750px)";
 	display none
 	
 	.menu-button {
+		padding 9px 0px
 		display block
 		width 100%
-		height headerHeight
 		background-color mainColour
 		font-size 200% //32px
 		text-align center
