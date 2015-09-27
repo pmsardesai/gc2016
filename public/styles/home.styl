@@ -6,7 +6,11 @@
 
 @media phone {
 	.main-app.pinned .home-inner {
-		display none
+		.tagline,
+		.event-details, 
+		.button-container {
+			display none
+		}
 	}
 }
 
@@ -18,11 +22,17 @@
 	color white
 	text-align center
 	display table
-	padding-bottom footerHeight
 	
 	.home-inner {
 		display table-cell
 		vertical-align middle
+	}
+	
+	.home-header{
+		height headerHeight
+		color white
+		fixed top 0 right 0 left 0
+		background rgba(0, 0, 0, 0.60)
 	}
 	
 	.tagline {
@@ -32,7 +42,7 @@
 	}
 	
 	.event-details {
-		padding 20px 0px
+		padding 15px 0px 20px 0px;
 		background rgba(0, 0, 0, 0.5)
 		width 350px
 		margin 20px auto
@@ -44,6 +54,7 @@
 	
 	.button-container {
 		padding-top 30px
+		padding-bottom 5px
 		
 		.button {
 			background #00ABFC
@@ -55,6 +66,10 @@
 		.register-button {
 			margin-right 10px
 		}
+	}
+	
+	.footer {
+		display table-row
 	}
 }
 
@@ -104,6 +119,7 @@
 		
 		.tagline {
 			padding headerHeight 0px 0px 0px
+			font-size 135%
 		}
 		.event-details {
 		    width: 200px;

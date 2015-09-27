@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from './Footer';
 import Header from './Header';
 import MenuBar from './MenuBar';
 
@@ -40,7 +39,6 @@ class App extends React.Component {
 			<div className={className}>
 				<Header onClick={this.onToggleMenuState.bind(this)} />
 				{ this.props.children }
-				<Footer />
 				<MenuBar type='mobile' />
 			</div>
 		);

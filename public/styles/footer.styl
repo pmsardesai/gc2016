@@ -3,7 +3,6 @@
 	background-color mainColour
 	height footerHeight
 	width 100%
-	absolute bottom
 
 	.label {
 		color white
@@ -20,11 +19,7 @@
 
 // style when menu is pinned
 @media phonePortrait {
-	.main-app.pinned {
-		.footer {
-			.label {
-				display none
-			}
-		}
+	.main-app.pinned .footer .label {
+		display none
 	}
 }

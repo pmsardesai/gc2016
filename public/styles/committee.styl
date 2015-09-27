@@ -1,0 +1,43 @@
+.committee {
+	.committee-header {		
+		fixed top right left
+		height 60px
+	    background-color: black;
+	}
+	
+	.committee-background{		
+		height 400px
+		background rgba(0, 0, 0, 0.60)
+	}
+	
+	.committee-title {
+		font-size 300%
+		text-align center
+		padding 20px 0px
+		font-family SourceSansPro
+		font-weight 300
+	}
+	
+	.contacts-container {
+		display table
+		
+		.contacts-container-inner {
+			display table-cell
+			text-align center
+		}
+	}
+
+	.footer {
+		position relative
+	}
+}
+
+@media phone {
+	.main-app.pinned .committee {
+		.committee-title,
+		.contacts-container,
+		.footer {
+			display none
+		}
+	}
+}

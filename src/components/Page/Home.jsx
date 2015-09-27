@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import Footer from '../Footer';
 import Label from '../Simple/Label';
 
 class Home extends React.Component {
@@ -7,6 +8,7 @@ class Home extends React.Component {
 		return (
 			<div className='content home'> 
 				<div className='home-inner'>
+					<div className='home-header'> </div>
 					<div className='tagline'>
 						<Label customCss='hindi' text="थंड वार्यार दर्या ल्हारार, गोंया तुजी याद येता" />
 						<Label customCss='english' text="Come enjoy Goa in Southern California" />
@@ -22,6 +24,7 @@ class Home extends React.Component {
 						<Link to='/sponsors' className='button donate-button'>Donate</Link>
 					</div>
 				</div>
+				<Footer />
 			</div>
 		);
 	}
