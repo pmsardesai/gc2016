@@ -2,6 +2,7 @@ import React from 'react';
 import Router, { Route } from 'react-router';
 import App from './components/App';
 import Committee from './components/page/Committee';
+import ComingSoon from './components/page/ComingSoon';
 import Contests from './components/page/Contests';
 import Gallery from './components/page/Gallery';
 import Home from './components/page/Home';
@@ -22,6 +23,7 @@ React.render((
     	<Route path="/contests" component={Contests} />
     	<Route path="/gallery" component={Gallery} />
     	<Route path="/pastevents" component={PastEvents} />
+        <Route path="/comingsoon" component={ComingSoon} />
     </Route>
   </Router>
 ), document.getElementById('react-root'));

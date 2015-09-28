@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Footer from '../Footer';
-import Label from '../Simple/Label';
 
 class Home extends React.Component {
 	render() {
@@ -10,17 +9,17 @@ class Home extends React.Component {
 				<div className='home-inner'>
 					<div className='home-header'> </div>
 					<div className='tagline'>
-						<Label customCss='hindi' text="थंड वार्यार दर्या ल्हारार, गोंया तुजी याद येता" />
-						<Label customCss='english' text="Come enjoy Goa in Southern California" />
+						<div className='hindi'>थंड वार्यार दर्या ल्हारार, गोंया तुजी याद येता</div>
+						<div className='english'>Come enjoy Goa in Southern California</div>
 					</div>
 					<div className='event-details'>
-						<Label customCss='title' text="Goan Convention" />
-						<Label customCss='phone' text="July 2 - 4, 2016" />
-						<Label customCss='hotel' text="Hilton" />
-						<Label customCss='address' text="Address and Postal Code" />
+						<div className='title'>Goan Convention</div>
+						<div className='phone'>July 2 - 4, 2016</div>
+						<div className='hotel'>Hotel Name</div>
+						<div className='address'>Address and Postal Code</div>
 					</div>
 					<div className='button-container'>
-						<Link to='/register' className='button register-button'>Register</Link>
+						<Link to='/comingsoon' className='button register-button'>Register</Link>
 						<Link to='/sponsors' className='button donate-button'>Donate</Link>
 					</div>
 				</div>

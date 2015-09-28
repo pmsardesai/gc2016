@@ -2,9 +2,10 @@
 
 Built using:
 
-NodeJS
-ExpressJS
-Stylus
-ReactJS
+* NodeJS
+* ExpressJS
+* Stylus
+* ReactJS
+* Gulp
 
 © Pooja Sardesai 2015

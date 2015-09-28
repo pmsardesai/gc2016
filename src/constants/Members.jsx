@@ -37,8 +37,7 @@ module.exports =
 			facebook: "https://www.facebook.com/pooja.sardesai",
 			email: "mailto:poojasar@hotmail.com",
 			linkedin: "https://ca.linkedin.com/in/psardesai",
-			github: "https://github.com/pmsardesai",
-			phone: "tel://"
+			github: "https://github.com/pmsardesai"
 		}
 	},
 	{

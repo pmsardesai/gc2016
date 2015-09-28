@@ -19,12 +19,12 @@ class MenuBar extends React.Component {
 		return (
 			<div className={baseClass}>
 				<Link to="/" className='menu-button'>Home</Link>
-				<Link to="/schedule" className='menu-button'>Schedule</Link>
+				<Link to="/comingsoon" className='menu-button'>Schedule</Link>
 				<Link to="/committee" className='menu-button'>Committee</Link>
-				<Link to="/sponsors" className='menu-button'>Sponsors</Link>
-				<Link to="/contests" className='menu-button'>Contests</Link>
-				<Link to="/gallery" className='menu-button'>Gallery</Link>
-				<Link to="/pastevents" className='menu-button'>Past Events</Link>
+				<Link to="/comingsoon" className='menu-button'>Sponsors</Link>
+				<Link to="/comingsoon" className='menu-button'>Contests</Link>
+				<Link to="/comingsoon" className='menu-button'>Gallery</Link>
+				<Link to="/comingsoon" className='menu-button'>Past Events</Link>
 			</div>
 		);
 	}

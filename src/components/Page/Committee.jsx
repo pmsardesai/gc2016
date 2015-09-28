@@ -7,7 +7,7 @@ class Committee extends React.Component {
 	render() { 
 		return (
 			<div className="committee">
-				<div className="committee-header" /> 
+				<div className="black-header-background" /> 
 				<div className="committee-background" /> 
 				<div className="committee-title">Our Team</div>
 				<div className="contacts-container"> 

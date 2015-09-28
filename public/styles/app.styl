@@ -50,17 +50,48 @@ body
 	absolute top 0 bottom 0 left 0 right 0
 	transition right animDuration
 
+// things to hide when menu is pinned
 @media phone {
 	.main-app.pinned {
 		right menuWidth
+		
+		// coming soon
+		.coming-soon .coming-soon-inner {
+			display none
+		}
+
+		// home
+		.home {
+			.tagline,
+			.event-details, 
+			.button-container {
+				display none
+			}
+		}
+		
+		// committe page
+		.committee {
+			.committee-title,
+			.contacts-container,
+			.footer {
+				display none
+			}
+		}
+		
+		// footer
+		.footer .copyright-info {
+			display none
+		}
 	}
 }
 
 @import 'header.styl'
 @import 'footer.styl'
-@import 'home.styl'
 @import 'menu.styl'
 @import 'contact.styl'
-@import 'committee.styl'
 
+// pages
+@import 'home.styl'
+@import 'committee.styl'
+@import 'comingsoon.styl'
     
