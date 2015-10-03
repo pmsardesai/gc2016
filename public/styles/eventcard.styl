@@ -1,0 +1,71 @@
+.event-card {
+	background-color offWhiteBackground
+	width 512px
+	height 40px
+	box-shadow 1px 1px 5px 0px rgba(50, 50, 50, 0.75)
+	border-radius 4px
+	overflow hidden
+	margin 15px auto
+
+	.year-container {
+		border 1px solid white
+		background defaultBlue
+		color white
+		width 80px
+		height 41px
+		padding 3px
+		display inline-block
+		vertical-align top
+		margin-top -1px
+		margin-left -1px
+		font-size 150%
+	}
+	
+	.location-container {
+		width 300px
+		display inline-block
+		font-size 125%
+		height 41px
+		padding-top 5px
+	}
+	
+	.links-container {
+		width 125px
+		display inline-block
+		background defaultOrange
+		vertical-align top
+		margin-right -1px
+		height 41px
+		
+		.fa {
+			padding 8px
+		}
+	}
+}
+
+@media phone {
+	.event-card {
+		width 180px
+		height 115px
+		
+		.year-container {
+			display block
+			width 180px
+			padding-top 3px
+			height 30px
+		}
+		.location-container {
+			display block
+			width 180px
+			height 35px
+		}
+		.links-container {
+			display block
+			width 180px
+			
+			.fa {
+				padding 8px 12px
+			}
+		}
+	}
+}

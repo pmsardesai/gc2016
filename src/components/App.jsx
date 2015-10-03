@@ -30,6 +30,10 @@ class App extends React.Component {
 		this.setState({
 			menuState: this.state.menuState === 'unpinned' ? 'pinned' : 'unpinned'
 		});
+
+
+		// return true so that it navigates to the proper page
+		return true;
 	}
 
 	render() {
@@ -39,7 +43,7 @@ class App extends React.Component {
 			<div className={className}>
 				<Header onClick={this.onToggleMenuState.bind(this)} />
 				{ this.props.children }
-				<MenuBar type='mobile' />
+				<MenuBar type='mobile' onItemClick={this.onToggleMenuState.bind(this)} />
 			</div>
 		);
 	}

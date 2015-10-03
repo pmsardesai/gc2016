@@ -6,6 +6,10 @@ footerHeight = 30px;
 menuWidth = 250px;
 
 mainColour = #202020;
+defaultBlue = #00ABFC;
+defaultOrange = #FF6A00;
+offWhiteBackground = #FBFAF3;
+
 PTSansNarrow = 'PT Sans Narrow', sans-serif;
 SourceSansPro = 'Source Sans Pro', sans-serif;
 
@@ -49,6 +53,40 @@ body
 .main-app
 	absolute top 0 bottom 0 left 0 right 0
 	transition right animDuration
+	
+.page-header {
+	position relative
+
+	.background {
+		height 400px
+		background rgba(0, 0, 0, 0.6)
+		background-size cover
+		background-position center
+	}
+
+	.page-title {
+		font-size 300%
+		text-align center
+		padding 0px
+		font-family SourceSansPro
+		font-weight 300
+		absolute left right bottom
+		color white
+		background-color rgba(0, 0, 0, 0.6)
+	}
+}
+
+.page-details
+	width 100%
+	background-color #FDE296
+	padding 20px 10px
+	font-size 125%
+	box-sizing border-box
+
+// size of icon
+.fa.fa-1dot5x
+	font-size 1.5em
+	padding 10px
 
 // things to hide when menu is pinned
 @media phone {
@@ -71,11 +109,21 @@ body
 		
 		// committe page
 		.committee {
-			.committee-title,
-			.contacts-container,
 			.footer {
 				display none
 			}
+		}
+		
+		// past events page
+		.past-events {
+			.footer {
+				display none
+			}
+		}
+		
+		.page-header,
+		.page-content {
+			display none;
 		}
 		
 		// footer
@@ -89,9 +137,11 @@ body
 @import 'footer.styl'
 @import 'menu.styl'
 @import 'contact.styl'
+@import 'eventcard.styl'
 
 // pages
 @import 'home.styl'
 @import 'committee.styl'
+@import 'pastevents.styl'
 @import 'comingsoon.styl'
     

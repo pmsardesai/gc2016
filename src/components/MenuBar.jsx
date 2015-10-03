@@ -9,7 +9,12 @@ class MenuBar extends React.Component {
 		/*
 		* The type of menu. Can be either 'mobile' or 'web'.
 		*/
-		type: React.PropTypes.string
+		type: React.PropTypes.string,
+
+		/*
+		* The click event handler.
+		*/
+		onItemClick: React.PropTypes.func
 	}
 
 	render() {
@@ -19,12 +24,12 @@ class MenuBar extends React.Component {
 		return (
 			<div className={baseClass}>
 				<Link to="/" className='menu-button'>Home</Link>
-				<Link to="/comingsoon" className='menu-button'>Schedule</Link>
-				<Link to="/committee" className='menu-button'>Committee</Link>
-				<Link to="/comingsoon" className='menu-button'>Sponsors</Link>
-				<Link to="/comingsoon" className='menu-button'>Contests</Link>
-				<Link to="/comingsoon" className='menu-button'>Gallery</Link>
-				<Link to="/comingsoon" className='menu-button'>Past Events</Link>
+				<Link to="/comingsoon" className='menu-button' onclick={this.props.onItemClick}>Schedule</Link>
+				<Link to="/committee" className='menu-button' onclick={this.props.onItemClick}>Committee</Link>
+				<Link to="/comingsoon" className='menu-button' onclick={this.props.onItemClick}>Sponsors</Link>
+				<Link to="/comingsoon" className='menu-button' onclick={this.props.onItemClick}>Contests</Link>
+				<Link to="/comingsoon" className='menu-button' onclick={this.props.onItemClick}>Gallery</Link>
+				<Link to="/pastevents" className='menu-button' onclick={this.props.onItemClick}>Past Events</Link>
 			</div>
 		);
 	}

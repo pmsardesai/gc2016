@@ -44,7 +44,7 @@ gulp.task('build:lint', function() {
 
 // ********** compile **********
 // Compile JSX files
-gulp.task('build:jsx', function () {
+gulp.task('build:jsx', ['build:lint'], function () {
 	var bundle = browserify({
 		entries: config.entry,
 		extensions: ['.jsx'],
@@ -79,7 +79,7 @@ gulp.task('watch', function() {
 	});
 
 	// watch for any changes in jsx or styl files
-	gulp.watch(config.watch.jsx, ['build:lint', 'build:jsx']);
+	gulp.watch(config.watch.jsx, ['build:jsx']);
 	gulp.watch(config.watch.styl, ['build:styl']);
 
 	browserSync.init( {
@@ -94,7 +94,6 @@ gulp.task('all',
 	 'watch']);
 
 gulp.task('build:all', 
-	['build:lint',
-	 'build:jsx', 
+	['build:jsx', 
 	 'build:images',	
 	 'build:styl']);
