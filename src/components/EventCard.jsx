@@ -11,11 +11,11 @@ class EventCard extends React.Component {
 	_renderEvent(event) {
 		let blocks = [];
 
-		event && event.website &&
-			blocks.push(<a href={event.website} target="_blank" className="fa fa-1dot5x fa-globe"></a>);
-
 		event && event.dvd &&
 			blocks.push(<a href={event.dvd} target="_blank" className="fa fa-1dot5x fa-video-camera"></a>);
+
+		event && event.website &&
+			blocks.push(<a href={event.website} target="_blank" className="fa fa-1dot5x fa-globe"></a>);
 
 		event && event.souvenir &&
 			blocks.push(<a href={event.souvenir} target="_blank" className="fa fa-1dot5x fa-book"></a>);

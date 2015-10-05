@@ -1,0 +1,94 @@
+.sponsors {
+	.background {
+		background-image url('images/background-sponsors.png')
+	}
+
+	.info {
+		max-width 700px
+		text-align justify
+		margin 0 auto 20px auto
+		font-family SourceSansPro
+		padding 0px 20px
+		
+		.indent {
+			padding-left 40px
+			font-weight 700
+		}
+		
+		table {
+			border-collapse collapse
+			
+			td {
+				border-top 1px solid defaultOrange
+				border-bottom 1px solid defaultOrange
+				padding 5px 2px
+			}
+			
+			.left {
+				width 150px
+			}
+			.middle {
+				text-align left
+			}
+			.right {
+				width 175px
+				text-align right
+			}
+		}
+	}
+	
+	.info.title {
+		font-weight 700
+		font-size 125%
+		margin-top 20px
+		margin-bottom 20px
+	}
+
+	.info.buttons {
+		text-align center
+		font-size 120%
+		
+		a {
+			background defaultBlue
+			height 40px
+			width 150px
+			vertical-align top
+			text-align center
+			border-radius 3px
+			padding-top 15px
+		}
+		
+		.online {
+			margin-right 20px
+		}
+	}
+}
+
+@media phone {
+	.sponsors {
+		.info.title {
+			font-size 100%
+		}
+
+		.info table {
+			font-size 75%
+			
+			.left {
+				width 100px
+			}
+			.right {
+				width 125px
+			}
+		}
+		
+		.info.buttons {
+			font-size 100%
+			
+			a {
+				width 100px
+				height 50px
+				padding-top 10px
+			}
+		}
+	}
+}

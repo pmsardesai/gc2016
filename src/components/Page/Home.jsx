@@ -19,8 +19,8 @@ class Home extends React.Component {
 						<div className='address'>Address and Postal Code</div>
 					</div>
 					<div className='button-container'>
-						<Link to='/comingsoon' className='button register-button'>Register</Link>
-						<Link to='/comingsoon' className='button donate-button'>Donate</Link>
+						<Link to='/register' className='button register-button'>Register</Link>
+						<Link to='/sponsors' className='button donate-button'>Donate</Link>
 					</div>
 				</div>
 				<Footer />

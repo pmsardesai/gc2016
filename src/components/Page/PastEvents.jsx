@@ -6,7 +6,7 @@ import data from '../../constants/EventDetails';
 class PastEvents extends React.Component {
 	render() { 
 		return (
-			<div className="past-events">
+			<div className="page past-events">
 				<div className="black-header-background" /> 
 				<div className="page-header">
 					<div className="background" /> 

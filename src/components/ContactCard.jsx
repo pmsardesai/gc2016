@@ -12,19 +12,19 @@ class ContactCard extends React.Component {
 		let blocks = [];
 
 		info && info.github &&
-			blocks.push(<a href={info.github} className="fa fa-1dot5x fa-github-alt"></a>);
+			blocks.push(<a href={info.github} target="_blank" className="fa fa-1dot5x fa-github-alt"></a>);
 
 		info && info.facebook &&
-			blocks.push(<a href={info.facebook} className="fa fa-1dot5x fa-facebook"></a>);
+			blocks.push(<a href={info.facebook} target="_blank" className="fa fa-1dot5x fa-facebook"></a>);
 
 		info && info.email &&
-			blocks.push(<a href={info.email} className="fa fa-1dot5x fa-envelope"></a>);
+			blocks.push(<a href={info.email} target="_blank" className="fa fa-1dot5x fa-envelope"></a>);
 
 		info && info.phone &&
-			blocks.push(<a href={info.phone} className="fa fa-1dot5x fa-mobile-phone"></a>);
+			blocks.push(<a href={info.phone} target="_blank" className="fa fa-1dot5x fa-mobile-phone"></a>);
 
 		info && info.linkedin &&
-			blocks.push(<a href={info.linkedin} className="fa fa-1dot5x fa-linkedin"></a>);
+			blocks.push(<a href={info.linkedin} target="_blank" className="fa fa-1dot5x fa-linkedin"></a>);
 
 		return blocks;
 	}

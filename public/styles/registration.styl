@@ -1,0 +1,102 @@
+.registration {
+	// no need to display a header for this page
+	.page-header {
+		height headerHeight
+		.background {
+			display none
+		}
+	}
+	.info {
+		max-width 700px
+		text-align justify
+		margin 0 auto 20px auto
+		font-family SourceSansPro
+		padding 0px 20px
+		
+		.indent {
+			padding-left 40px
+			font-weight 700
+		}
+	}
+	
+	.info.first {
+		margin-top 20px
+	}
+
+	.info.table {
+		margin-bottom 5px
+
+		table {
+			border-collapse collapse
+			width 100%
+
+			.table-header {
+				font-weight 600
+			}
+			
+			.cost {
+				width 75px
+				text-align center
+			}
+			
+			td {
+				border-top 1px solid defaultOrange
+				border-bottom 1px solid defaultOrange
+				padding 5px 2px
+			}
+			
+			td:first-child {
+				text-align left
+			}
+		}
+	}
+
+	.info.note {
+		font-size 60%
+		font-weight 400
+	}
+	
+	.info.buttons {
+		text-align center
+		font-size 120%
+		
+		a {
+			background defaultBlue
+			height 55px
+			width 150px
+			vertical-align top
+			text-align center
+			border-radius 3px
+			padding-top 5px
+		}
+		
+		.online {
+			margin-right 20px
+		}
+	}
+}
+
+@media phone {
+	.registration {
+		.info.title {
+			font-size 100%
+		}
+
+		.info.table table {
+			font-size 75%
+
+			.cost {
+				width 50px
+			}
+		}
+		
+		.info.buttons {
+			font-size 100%
+			
+			a {
+				width 100px
+				height 50px
+			}
+		}
+	}
+}

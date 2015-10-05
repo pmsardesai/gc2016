@@ -30,10 +30,6 @@ class App extends React.Component {
 		this.setState({
 			menuState: this.state.menuState === 'unpinned' ? 'pinned' : 'unpinned'
 		});
-
-
-		// return true so that it navigates to the proper page
-		return true;
 	}
 
 	render() {

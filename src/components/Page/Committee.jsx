@@ -6,7 +6,7 @@ import data from '../../constants/Members';
 class Committee extends React.Component {
 	render() { 
 		return (
-			<div className="committee">
+			<div className="page committee">
 				<div className="black-header-background" /> 
 				<div className="page-header">
 					<div className="background" /> 

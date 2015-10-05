@@ -23,13 +23,13 @@ class MenuBar extends React.Component {
 
 		return (
 			<div className={baseClass}>
-				<Link to="/" className='menu-button'>Home</Link>
-				<Link to="/comingsoon" className='menu-button' onclick={this.props.onItemClick}>Schedule</Link>
-				<Link to="/committee" className='menu-button' onclick={this.props.onItemClick}>Committee</Link>
-				<Link to="/comingsoon" className='menu-button' onclick={this.props.onItemClick}>Sponsors</Link>
-				<Link to="/comingsoon" className='menu-button' onclick={this.props.onItemClick}>Contests</Link>
-				<Link to="/comingsoon" className='menu-button' onclick={this.props.onItemClick}>Gallery</Link>
-				<Link to="/pastevents" className='menu-button' onclick={this.props.onItemClick}>Past Events</Link>
+				<Link to="/" className='menu-button' onClick={this.props.onItemClick}>Home</Link>
+				<Link to="/comingsoon" className='menu-button' onClick={this.props.onItemClick}>Schedule</Link>
+				<Link to="/committee" className='menu-button' onClick={this.props.onItemClick}>Committee</Link>
+				<Link to="/sponsors" className='menu-button' onClick={this.props.onItemClick}>Sponsors</Link>
+				{ /* <Link to="/comingsoon" className='menu-button' onclick={this.props.onItemClick}>Contests</Link>
+				 <Link to="/comingsoon" className='menu-button' onclick={this.props.onItemClick}>Gallery</Link> */ }
+				<Link to="/pastevents" className='menu-button' onClick={this.props.onItemClick}>Past Events</Link>
 			</div>
 		);
 	}
