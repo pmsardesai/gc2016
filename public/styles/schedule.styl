@@ -1,0 +1,60 @@
+.schedule {
+	.background {
+		
+	}
+
+	.info {
+		max-width 700px
+		text-align justify
+		margin 0 auto 20px auto
+		font-family SourceSansPro
+		padding 0px 20px
+		
+		table {
+			border-spacing 0
+			border 1px solid black
+
+			td {
+				text-align center
+				border 1px solid black
+				padding 5px
+			}
+			
+			.day {
+				text-align left
+				padding 10px 0px 10px 10px
+				background defaultOrange
+			}
+
+			.end {
+				padding 10px
+				background black
+			}
+			
+			.empty {
+				background #DFDFDF
+			}
+		}
+	}
+	
+	.info.note {
+		text-align center
+		padding-top 20px
+		font-size 100%
+	}
+	
+	.info.printable {
+		text-align center
+		
+		a {
+			color black
+			.document {
+				padding-left 10px
+				text-decoration underline
+			}
+		}
+		a:hover {
+			color #7D7D7D
+		}
+	}
+}
