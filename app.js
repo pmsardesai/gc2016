@@ -12,12 +12,12 @@ app.set('port', (process.env.PORT || 5000));
 app.use(favicon(path.join(__dirname , 'public', 'images', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(express.static(path.join(__dirname, 'build')));
-app.use('/documents', express.static(__dirname + '/public/documents'));
-app.use('/images', express.static(__dirname + '/public/images'));
+app.use('/documents', express.static(path.join(__dirname, 'public', 'documents')));
+app.use('/images', express.static(path.join(__dirname, 'public', 'images')));
 
 // get starting file
 app.get('/', function(request, response){
-    res.sendfile('build/index.html');
+    res.sendfile('index.html');
 });
 
 // Start listening on port
