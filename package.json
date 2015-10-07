@@ -12,7 +12,8 @@
     "url": "https://github.com/pmsardesai/gc2016.git"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "postinstall": "gulp build:all"
   },
   "dependencies": {
     "express": "^4.13.3",
