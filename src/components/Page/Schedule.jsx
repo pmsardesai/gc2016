@@ -178,18 +178,18 @@ class Schedule extends React.Component {
 									<td className="event empty"></td>
 								</tr>
 								<tr>
-									<td className="time">10 AM</td>
+									<td className="time">10:00 AM</td>
 									<td className="event">Closing Ceremony</td>
 									<td className="event" rowSpan="2">Youth and Kids Activities</td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
-									<td className="time">11 AM</td>
+									<td className="time">11:00 AM</td>
 									<td className="event">Financial report and vote of thanks</td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
-									<td className="time">11:30</td>
+									<td className="time">11:30 AM</td>
 									<td className="event">Lunch</td>
 									<td className="event empty"></td>
 									<td className="event empty"></td>

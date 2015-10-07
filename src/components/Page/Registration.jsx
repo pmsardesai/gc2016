@@ -12,7 +12,6 @@ class Registration extends React.Component {
 				</div>
 				<div className="page-content registration-container"> 
 					<div className="registration-container-inner">
-
 						<div className="info first">
 							It gives us immense pleasure to invite you all to the 13th Goan Convention in Irvine, CA. The table below lists the registration fees for the convention. Registration opens in December 2015. Early bird registration is available if you register before February 2016.
 						</div>
