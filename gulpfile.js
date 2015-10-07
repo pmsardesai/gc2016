@@ -4,7 +4,6 @@ var babel = require('gulp-babel'),
 	eslint = require('gulp-eslint'),
 	fs = require('fs'),
 	gulp = require('gulp'),
-	imagemin = require('gulp-imagemin'),
 	nib = require('nib'),
 	nodemon = require('gulp-nodemon'),
 	stylus = require('gulp-stylus');
@@ -23,10 +22,6 @@ var config = {
 	styles: {
 		src: './public/styles/app.styl',
 		dest: './build'
-	},
-	images: {
-		src: './public/images/*.png',
-		dest: './build/images'
 	},
 	watch : {
 		jsx: 'src/**/**/*.jsx',
@@ -54,13 +49,6 @@ gulp.task('build:jsx', ['build:lint'], function () {
 
 	return bundle.bundle()
 		.pipe(fs.createWriteStream(config.bundleJS, 'utf8'));
-});
-
-// Compile images
-gulp.task('build:images', function() {
-  return gulp.src(config.images.src)
-    .pipe(imagemin())
-    .pipe(gulp.dest(config.images.dest));
 });
 
 // Compile STYL files
@@ -95,5 +83,4 @@ gulp.task('all',
 
 gulp.task('build:all', 
 	['build:jsx', 
-	 'build:images',	
 	 'build:styl']);
