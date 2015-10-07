@@ -15,6 +15,11 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.use('/documents', express.static(__dirname + '/public/documents'));
 app.use('/images', express.static(__dirname + '/public/images'));
 
+// get starting file
+app.get('/', function(request, response){
+    res.sendfile('build/index.html');
+});
+
 // Start listening on port
 app.listen(app.get('port'), function () {
     console.log('Node app is running on port', app.get('port'));
