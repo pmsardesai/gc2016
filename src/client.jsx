@@ -1,15 +1,15 @@
 import React from 'react';
 import Router, { Route } from 'react-router';
 import App from './components/App';
-import Committee from './components/page/Committee';
-import ComingSoon from './components/page/ComingSoon';
-import Contests from './components/page/Contests';
-import Gallery from './components/page/Gallery';
-import Home from './components/page/Home';
-import PastEvents from './components/page/PastEvents';
-import Registration from './components/page/Registration';
-import Schedule from './components/page/Schedule';
-import Sponsors from './components/page/Sponsors';
+import Committee from './components/Page/Committee';
+import ComingSoon from './components/Page/ComingSoon';
+import Contests from './components/Page/Contests';
+import Gallery from './components/Page/Gallery';
+import Home from './components/Page/Home';
+import PastEvents from './components/Page/PastEvents';
+import Registration from './components/Page/Registration';
+import Schedule from './components/Page/Schedule';
+import Sponsors from './components/Page/Sponsors';
 import { createHistory } from 'history';
 
 const browserHistory = createHistory();
