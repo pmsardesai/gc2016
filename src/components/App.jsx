@@ -30,6 +30,8 @@ class App extends React.Component {
 		this.setState({
 			menuState: this.state.menuState === 'unpinned' ? 'pinned' : 'unpinned'
 		});
+
+		window.scrollTo(0, 0);
 	}
 
 	render() {

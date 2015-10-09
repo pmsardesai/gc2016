@@ -15,7 +15,7 @@ class Header extends React.Component {
 			<div className='header'>
 				<div className='header-content'>
 					<Link to='/' className='logo' />
-					<MenuBar type='web' />
+					<MenuBar type='web' onItemClick={this.props.onClick} />
 					<button
 						className="hamburger-icon fa fa-bars fa-2x"
 						onClick={this.props.onClick}
