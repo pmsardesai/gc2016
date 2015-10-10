@@ -59,7 +59,7 @@ class Registration extends React.Component {
 						</div>
 
 						<div className="info">
-							Please complete and mail this form with your check made payable to:
+							Please complete the mail-in registration form with your check made payable to:
 							<div className="indent">Goan Organization of America</div>
 						</div>
 
