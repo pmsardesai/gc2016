@@ -7,27 +7,44 @@ module.exports =
 	{
 		name: "Rohin Parkar",
 		title: "Chairman",
-		imageCss: "fa fa-5x fa-question"
+		imageCss: "ImgRohin",
+		social: {
+			email: "mailto:rohinparkar@gmail.com",
+			phone: "tel:214-235-4525"
+		}
 	},
 	{
 		name: "Vaibhavi Parkar",
 		title: "Finance and Catering Coordinator",
-		imageCss: "fa fa-5x fa-question"
+		imageCss: "ImgVaibhavi",
+		social: {
+			email: "mailto:vaibhavirparkar@gmail.com",
+			phone: "tel:469-321-1734"
+		}
 	},
 	{
 		name: "Maia Pawooskar",
 		title: "Cultural Event Coordinator",
-		imageCss: "fa fa-5x fa-question"
+		imageCss: "ImgMaia",
+		social: {
+			email: "mailto:maia.pawooskar@gmail.com"
+		}
 	},
 	{
 		name: "Radhika Naik",
 		title: "Outdoor Event and Venue Coordinator",
-		imageCss: "fa fa-5x fa-question"
+		imageCss: "ImgRadhika",
+		social: {
+			email: "mailto:radhika26r@gmail.com"
+		}
 	},
 	{
 		name: "Arti Ramnathkar",
 		title: "Kids and Youth Event Coordinator",
-		imageCss: "fa fa-5x fa-question"
+		imageCss: "ImgArti",
+		social: {
+			email: "mailto:arti.ramnathkar@gmail.com"
+		}
 	},
 	{
 		name: "Pooja Sardesai",
@@ -43,16 +60,25 @@ module.exports =
 	{
 		name: "Reema Prabhudesai",
 		title: "Communication and Promotion Coordinator",
-		imageCss: "fa fa-5x fa-question"
+		imageCss: "ImgReema",
+		social: {
+			email: "mailto:reema.kakodker@gmail.com"
+		}
 	},
 	{
 		name: "Parijat Prabhudesai",
 		title: "Overall Program Coordinator",
-		imageCss: "fa fa-5x fa-question"
+		imageCss: "ImgParijat",
+		social: {
+			email: "mailto:parijat.prabhudesai@gmail.com"
+		}
 	},
 	{
 		name: "Abhaya Karangutkar",
 		title: "Editor in Chief",
-		imageCss: "fa fa-5x fa-question"
+		imageCss: "ImgAbhaya",
+		social: {
+			email: "mailto:abhaya75@yahoo.com"
+		}
 	}
 ];
