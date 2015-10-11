@@ -26,9 +26,10 @@ class App extends React.Component {
 	/*
   	* When the menu button is clicked, toggle the state of menu.
   	*/
-	onToggleMenuState() {
+	onToggleMenuState(unpin) {
+		let state = unpin === true ? 'pinned' : this.state.menuState;
 		this.setState({
-			menuState: this.state.menuState === 'unpinned' ? 'pinned' : 'unpinned'
+			menuState: (state === 'unpinned') ? 'pinned' : 'unpinned'
 		});
 
 		window.scrollTo(0, 0);

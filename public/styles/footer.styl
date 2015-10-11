@@ -3,16 +3,34 @@
 	background-color mainColour
 	height footerHeight
 	width 100%
+	font-size 70% // 10px
+	color white
 
 	.copyright-info {
-		color white
-		text-align center
-		font-size 62% // 10px
-		padding-top 8px
-		
+		float left
+		padding 9px 0px 0px 5px
+
 		/*On mobile, this is two lines when going from pinned to unpinned
 	      state. Add this so that the content is always in one line */
 		overflow hidden
 		white-space nowrap
+	}
+	
+	.contact-us {
+		float right
+		padding 9px 5px 0px 0px
+
+	}
+}
+
+@media (max-width: 350px) {
+	.footer {
+		text-align center
+		
+		.copyright-info, .contact-us {
+			padding-top 2px
+			float none
+			display block
+		}
 	}
 }

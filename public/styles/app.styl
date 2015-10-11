@@ -2,7 +2,7 @@
 
 // VARIABLES
 headerHeight = 60px;
-footerHeight = 30px;
+footerHeight = 34px;
 menuWidth = 250px;
 
 mainColour = #202020;
@@ -45,6 +45,15 @@ a:hover,
 a:active 
 	color #DCDCDC
 
+a.disabled
+	color white
+	cursor default
+	background #BBBBBB
+
+a.disabled:hover,
+a.disabled:active 
+	color white
+
 // MAIN APP
 body
 	margin 0px
@@ -57,6 +66,7 @@ body
 
 .page {
 	padding-top headerHeight
+	background #FBFAF3
 
 	.page-content {
 		background #FBFAF3
@@ -105,9 +115,10 @@ body
 		// home
 		.home {
 			.tagline,
-			.event-details, 
 			.button-container,
-			.footer .copyright-info {
+			.event-details-container, 
+			.copyright-info,
+			.contact-us {
 				display none
 			}
 		}

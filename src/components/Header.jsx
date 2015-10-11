@@ -10,12 +10,16 @@ class Header extends React.Component {
 		onClick: React.PropTypes.func
 	}
 
+	onMenuButtonToggle() {
+		this.props.onClick(true);
+	}
+
 	render() {
 		return (
 			<div className='header'>
 				<div className='header-content'>
 					<Link to='/' className='logo' />
-					<MenuBar type='web' onItemClick={this.props.onClick} />
+					<MenuBar type='web' onItemClick={this.onMenuButtonToggle.bind(this)} />
 					<button
 						className="hamburger-icon fa fa-bars fa-2x"
 						onClick={this.props.onClick}

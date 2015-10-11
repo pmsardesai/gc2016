@@ -26,14 +26,54 @@
 	    text-shadow black 2px 2px 2px
 	}
 	
-	.event-details {
+	.event-details-container {
 		padding 15px 0px 20px 0px;
-		background rgba(0, 0, 0, 0.5)
+		background rgba(0, 0, 0, 0.6)
 		width 350px
 		margin 20px auto
 		
 		.title {
 			font-size 187% //30px
+		}
+		
+		.date-details {
+			display inline-block
+			background black
+			width 60px
+			margin 5px 20px 0px 0px
+			border-radius 4px
+			overflow hidden
+			border 2px solid black
+			
+			.month {
+				//font-size 125%
+			}
+			
+			.day {
+				letter-spacing 10px
+				margin-right -10px
+				border-top 1px solid white
+				border-bottom 1px solid white
+				font-size 84%
+				height 20px
+				padding-top 2px
+			}
+			
+			.year {
+				font-size 84%
+				height 20px
+				padding-top 2px
+			}
+			
+
+			//https://www.google.com/maps/place/Orange+County,+CA/@33.667273,-118.04556,10z/data=!4m2!3m1!1s0x80dc925c54d5f7cf:0xdea6c3618ff0d607
+
+		}
+		
+		.hotel-details {
+			display inline-block
+			vertical-align top
+			padding-top 5px
 		}
 	}
 	
@@ -63,7 +103,7 @@
 		.tagline {
 			font-size 125% //20px
 		}
-		.event-details  {
+		.event-details-container {
 			width 250px 
 			padding 5px 0px 10px 0px
 			
@@ -85,7 +125,7 @@
 		.tagline {
 			padding headerHeight 0px 15px 0px
 		}
-		.event-details {
+		.event-details-container {
 			margin 5px auto
 			padding 2px 0 5px 0
 		}
@@ -106,7 +146,7 @@
 			padding headerHeight 0px 0px 0px
 			font-size 135%
 		}
-		.event-details {
+		.event-details-container {
 		    width: 200px;
 			font-size 80%
 		}

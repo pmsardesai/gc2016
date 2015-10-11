@@ -86,8 +86,8 @@ class Sponsors extends React.Component {
 						</div>
 
 						<div className="info buttons">
-							<a href="" target="_blank" className="online">Online Donation</a>
-							<a href="documents/sponsorship-form.pdf" target="_blank" className="mailin">Mail-In Donation</a>
+							<a className="online disabled">Online Donation<div className="note">(Open in Dec 2015)</div></a>
+							<a className="mailin" href="documents/sponsorship-form.pdf" target="_blank">Mail-In Donation</a>
 						</div>
 
 						<div className="info">
