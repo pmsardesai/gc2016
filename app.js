@@ -15,6 +15,20 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.use('/documents', express.static(path.join(__dirname, 'public', 'documents')));
 app.use('/images', express.static(path.join(__dirname, 'public', 'images')));
 
+
+// Get html when page is refreshed
+var directPage = function(req, res) {
+	res.sendFile(path.join(__dirname, 'build', 'index.html'));
+}
+app.get('/schedule', directPage);
+app.get('/committee', directPage);
+app.get('/sponsors', directPage);
+app.get('/contests', directPage);
+app.get('/gallery', directPage);
+app.get('/pastevents', directPage);
+app.get('/register', directPage);
+app.get('/comingsoon', directPage);
+
 // Start listening on port
 app.listen(app.get('port'), function () {
     console.log('Node app is running on port', app.get('port'));
