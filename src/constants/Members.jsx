@@ -80,36 +80,5 @@ module.exports =
 		social: {
 			email: "mailto:abhaya75@yahoo.com"
 		}
-	},
-	/*Advisory committee members*/
-	{
-		name: "Swati Virginkar",
-		title: "Advisory Committee Member",
-		imageCss: "fa fa-5x fa-question"
-	},
-	{
-		name: "Arun Virginkar",
-		title: "Advisory Committee Member",
-		imageCss: "fa fa-5x fa-question"
-	},
-	{
-		name: "Smeeta Sardesai",
-		title: "Advisory Committee Member",
-		imageCss: "fa fa-5x fa-question"
-	},
-	{
-		name: "Rajendra Sardesai",
-		title: "Advisory Committee Member",
-		imageCss: "fa fa-5x fa-question"
-	},
-	{
-		name: "Meenal Sanwordekar",
-		title: "Advisory Committee Member",
-		imageCss: "fa fa-5x fa-question"
-	},
-	{
-		name: "Dilip Sanwordekar",
-		title: "Advisory Committee Member",
-		imageCss: "fa fa-5x fa-question"
 	}
 ];

@@ -3,12 +3,37 @@
 		background-image url('images/background-committee.png')
 	}
 	
-	.contacts-container {
+	.committee-container {
 		display table
 		
-		.contacts-container-inner {
-			display table-cell
+		.contacts-container {
+			display table-row
 			text-align center
+		}
+		
+		.advisory-committee-container {
+			display table-row
+			text-align center
+			table {
+				margin 20px auto 20px auto
+				background white
+				box-shadow 1px 1px 5px 0px rgba(50, 50, 50, 0.75)
+				border 1px solid lightgrey
+				border-spacing 0px
+
+				.table-header {
+					font-size 200%
+					background defaultOrange
+					color white
+					padding 5px 10px
+				}
+				
+				.name {
+					border-bottom 1px solid lightgrey
+					font-size 150%
+					padding 5px 10px
+				}
+			}
 		}
 	}
 
