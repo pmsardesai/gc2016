@@ -7,7 +7,7 @@ module.exports =
 	{
 		year: "2014",
 		location: "Pittsburgh, PA",
-		website: "http://goanconvention2014.herokuapp.com/",
+		website: "http://2014.goansinamerica.com",
 		souvenir: "documents/2014.pdf",
 		dvd: "https://www.youtube.com/watch?v=G-VdMpwhjbk&feature=youtu.be"
 	},

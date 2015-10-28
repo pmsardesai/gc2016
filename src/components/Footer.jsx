@@ -4,7 +4,13 @@ class Footer extends React.Component {
 	render() {
 		return (
 			<div className='footer'>
-				<span className='contact-us'>Contact us at goanconvention2016@gmail.com</span>
+				<span className='contact-us-container'>
+					<span className='contact-us'>
+						Contact us at 
+					</span>
+					<a href="mailto:goanconvention2016@gmail.com" target="_blank" className='email'>goanconvention2016@gmail.com</a>
+					<a href="https://www.facebook.com/goanconvention2016" target="_blank" className='fa fa-facebook'></a>
+				</span>
 				<span className='copyright-info'>2015 © Designed by Pooja Sardesai</span>
 			</div>
 		);

@@ -20,10 +20,10 @@ class Sponsors extends React.Component {
 							Since 1993, the Goan Convention is held every two years in different parts of USA. We are fortunate to host the 2016 convention in southern California. We are all excited to make this a grand event.
 						</div>
 						<div className="info">
-							The 2016 Goan Convention will only be possible with generous donations from all the Goan-Indian community and businesses in USA and back in India. We will be publishing a convention souvenir booklet which will include information of all the cultural programs, pictures, and contacts of fellow Goans. We urge individuals, corporations and private businesses to participate by advertising in this souvenir. Sponsors will be able to specify their own message in their advertisement space. In addition, sponsors who advertise for $500 or more will get to sponsor an event during the convention (such as cultural program events, lunches, dinners, drinks and more) and we will recognize their support during the event in the form of announcements. An event may have multiple sponsors.
+							The 2016 Goan Convention will only be possible with generous donations from all the Goan‐Indian community and businesses in USA and back in India. We will be publishing a convention souvenir booklet which will include information of all the cultural programs, pictures, and contacts of fellow Goans. We urge individuals, corporations and private businesses to participate by advertising in this souvenir. Sponsors will be able to specify their own message in their advertisement space. In addition, sponsors who advertise for $500 or more will get to sponsor an event during the convention (such as cultural program events, lunches, dinners, drinks and more) and we will recognize their support during the event in the form of announcements. An event may have multiple sponsors. For mega sponsors (above $5000), we will also prepare a banner which will be displayed in the convention hall.
 						</div>
 						<div className="info">
-							For mega sponsors, we will also prepare a banner which will be displayed in the convention hall.
+							We ask for your commitment to support our goal of making a difference by donating a portion of the proceeds to charitable organizations.
 						</div>
 						<div className="info">
 							Following are the rates to advertise in the souvenir:
@@ -51,13 +51,13 @@ class Sponsors extends React.Component {
 
 								<tr> 
 									<td className="left">Silver Sponsor</td>
-									<td className="middle">Full page black and white</td>
+									<td className="middle">½ page color</td>
 									<td className="right">USD $750 - USD $999</td>
 								</tr>
 
 								<tr> 
 									<td className="left">Gold Sponsor</td>
-									<td className="middle">½ page color</td>
+									<td className="middle">Full page black and white</td>
 									<td className="right"> USD $1000 - USD $1999</td>
 								</tr>
 
