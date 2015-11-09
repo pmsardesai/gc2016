@@ -1,0 +1,89 @@
+.hotel {
+	font-family: SourceSansPro
+
+	.background {
+		background-image url('images/background-hotel.png')
+	}
+
+	.mobile { display: none; width: 300px; height: 300px }
+	.desktop { display: inline-block; width: 500px; height: 500px }
+	
+	.tablet, .mobile, .desktop {
+		border: 0
+	}
+
+	.hotel-container {
+		display table
+		margin 10px auto
+		
+		.description {
+			text-align: center
+			font-size: 125%
+			margin-top: 10px
+		}
+
+		.title {
+			text-align: center
+			font-size: 175%
+			font-weight: 600
+			margin-bottom: 10px
+		}
+
+		.details-container {
+			width: 500px;
+			background: white;
+			border: 1px solid defaultBlue
+			margin: 0 auto 10px auto
+			
+			.info {
+				display table
+				padding 10px
+				border-bottom: 1px solid defaultOrange
+				
+				.cell {
+					display: table-cell
+				}
+
+				.left {
+					width: 200px
+				}
+				.right {
+					width: 300px
+				}
+			}
+			
+			.info.last {
+				border-bottom-width: 0px
+			}
+		}
+		
+		.map-container {
+			border: defaultBlue
+			margin: 0 auto
+			display: table
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.hotel {
+		font-size: 12px
+		
+		.desktop { display: none; }
+		.mobile { display: block; }
+
+
+		.hotel-container .details-container {
+			width: 300px
+			
+			.info {
+				.left {
+					width: 100px;
+				}
+				.right {
+					width: 200px
+				}
+			}
+		}
+	}
+}

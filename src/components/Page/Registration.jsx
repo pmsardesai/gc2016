@@ -15,35 +15,35 @@ class Registration extends React.Component {
 						<div className="info first">
 							It gives us immense pleasure to invite you all to the 13th Goan Convention in Orane County, CA. The table below lists the registration fees for the convention. Registration opens in December 2015. Early bird registration is available if you register before March 2016.
 						</div>
-
+						<div className="info">
+							<div className="highlight">
+							The deadline for registration is <b>31<sup>st</sup> May 2016</b>, after which no entries will be accepted. This is to allow time for accurate estimation and planning.
+							</div>
+						</div>
 						<div className="info table">
 							<table>
 								<tr className="table-header"> 
 									<td>2016 Registration Fees*</td>
 									<td className="cost">Dec-Feb</td>
 									<td className="cost">Mar-May</td>
-									<td className="cost">June</td>
 								</tr>
 
 								<tr> 
 									<td>Adult Regular (21+)</td>
 									<td className="cost">$185</td>
 									<td className="cost">$205</td>
-									<td className="cost">$215</td>
 								</tr>
 
 								<tr> 
-									<td>Adult Sudent (16-21)</td>
+									<td>Adult Student (16-21)</td>
 									<td className="cost">$145</td>
 									<td className="cost">$165</td>
-									<td className="cost">$175</td>
 								</tr>
 
 								<tr> 
 									<td>Child (6-15)</td>
 									<td className="cost">$115</td>
 									<td className="cost">$125</td>
-									<td className="cost">$135</td>
 								</tr>
 							</table>
 						</div>

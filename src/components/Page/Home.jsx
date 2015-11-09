@@ -9,7 +9,7 @@ class Home extends React.Component {
 				<div className='home-inner'>
 					<div className='home-header'> </div>
 					<div className='tagline'>
-						<div className='hindi'>थंड वार्यार दर्या ल्हारार, गोंया तुजी याद येता</div>
+						<div className='hindi'>थंड वाऱ्यार दर्या ल्हारार, गोंया तुजी याद येता</div>
 						<div className='english'>Come enjoy Goa in Southern California</div>
 					</div>
 					<div className='event-details-container'>
@@ -21,10 +21,14 @@ class Home extends React.Component {
 								<div className='day'>234</div>
 								<div className='year'>2016</div>
 							</span>
+							<span className='date-details-mobile'>
+								<div className='date'>July 2<sup>nd</sup> - 4<sup>th</sup>, 2016</div>
+							</span>
 							<span className='hotel-details'>
-								<div className='name'>Hotel</div>
-								<div className='address'>(to be determined)</div>
-								<div className='postal-code'></div>
+								<div className='name'>DoubleTree by Hilton Hotel</div>
+								<div className='location'>Santa Ana – Orange County Airport</div>
+								<div className='address'>201 E MacArthur Blvd</div>
+								<div className='postal-code'>Santa Ana, CA 92707, USA</div>
 							</span>
 						</div>
 

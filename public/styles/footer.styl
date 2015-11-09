@@ -3,12 +3,12 @@
 	background-color mainColour
 	height footerHeight
 	width 100%
-	font-size 70% // 10px
+	font-size 85% 
 	color white
 
 	.copyright-info {
 		float left
-		padding 9px 0px 0px 5px
+		padding 8px 0px 0px 5px
 
 		/*On mobile, this is two lines when going from pinned to unpinned
 	      state. Add this so that the content is always in one line */
@@ -18,30 +18,35 @@
 	
 	.contact-us-container {
 		float right
-		padding 9px 5px 0px 0px
+		padding 8px 5px 0px 0px
 
 		.email {
 			text-decoration underline
 			padding-left 3px
 		}
 
-		.fa-facebook {
+		.fa-facebook-official {
 			padding-left 5px
-			font-size 13px
+			font-size 15px
 			vertical-align middle
+			color defaultBlue
 		}
 	}
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
 	.footer {
 		text-align center
 		
 		.copyright-info, .contact-us-container {
-			padding-top 2px
+			padding-top 0px
 			float none
 			display block
-			font-size 90%
+			font-size 85%
+		}
+		
+		.copyright-info {
+			padding-top 1px
 		}
 	}
 }

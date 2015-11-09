@@ -9,6 +9,7 @@ module.exports =
 		title: "Chairman",
 		imageCss: "ImgRohin",
 		social: {
+			facebook: "https://www.facebook.com/rohin.parkar",
 			email: "mailto:rohinparkar@gmail.com",
 			phone: "tel:214-235-4525"
 		}
@@ -18,6 +19,7 @@ module.exports =
 		title: "Finance and Catering Coordinator",
 		imageCss: "ImgVaibhavi",
 		social: {
+			facebook: "https://www.facebook.com/vaibhavi.parkar.7",
 			email: "mailto:vaibhavirparkar@gmail.com",
 			phone: "tel:469-321-1734"
 		}

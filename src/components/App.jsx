@@ -49,9 +49,12 @@ class App extends React.Component {
 		const className = 'main-app ' + this.state.menuState;
 
 		// if user navigates to new page, send pageview to google analytics
-		const GA_TRACKING_CODE = 'UA-49795903-4';
-		GoogleAnalytics('create', GA_TRACKING_CODE);
-		this.state.isNewPage && GoogleAnalytics('send', 'pageview', this.state.pathname);
+		if (window.location.hostname !== 'localhost' &&
+		 	window.location.host !== 'dev.goansinamerica.com') { // exclude development traffic
+			const GA_TRACKING_CODE = 'UA-49795903-4';
+			GoogleAnalytics('create', GA_TRACKING_CODE);
+			this.state.isNewPage && GoogleAnalytics('send', 'pageview', this.state.pathname);
+		}
 
 		return (
 			<div className={className}>
