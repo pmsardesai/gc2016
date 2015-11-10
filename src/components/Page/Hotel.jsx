@@ -17,7 +17,8 @@ class Sponsors extends React.Component {
 					<div className="hotel-container-inner">
 
 						<div className="description">The Goan Convention 2016 will be held at</div>
-						<div className="title"> Double Tree by Hilton Santa Ana - Orange County Airport</div>
+						<div className="title"> Double Tree by Hilton Hotel</div>
+						<div className="subtitle">Santa Ana - Orange County Airport</div>
 
 						<div className="details-container"> 
 							<div className="info">
@@ -45,7 +46,7 @@ class Sponsors extends React.Component {
 							</div>
 							<div className="info last">
 								<div className="cell left">Website</div>
-								<div className="cell right">doubletree3.hilton.com</div>
+								<a className="cell right" href="http://doubletree3.hilton.com" target="_blank">doubletree3.hilton.com</a>
 							</div>
 						</div>
 

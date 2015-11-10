@@ -21,6 +21,7 @@ var directPage = function(req, res) {
 	res.sendFile(path.join(__dirname, 'build', 'index.html'));
 }
 app.get('/schedule', directPage);
+app.get('/hotel', directPage);
 app.get('/committee', directPage);
 app.get('/sponsors', directPage);
 app.get('/contests', directPage);

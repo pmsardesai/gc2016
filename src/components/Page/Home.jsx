@@ -17,11 +17,6 @@ class Home extends React.Component {
 						<div className='title'>Goan Convention</div>
 						<div className='details'>
 							<span className='date-details'>
-								<div className='month'>July</div>
-								<div className='day'>234</div>
-								<div className='year'>2016</div>
-							</span>
-							<span className='date-details-mobile'>
 								<div className='date'>July 2<sup>nd</sup> - 4<sup>th</sup>, 2016</div>
 							</span>
 							<span className='hotel-details'>
