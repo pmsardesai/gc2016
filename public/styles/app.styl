@@ -9,6 +9,7 @@ mainColour = #202020;
 defaultBlue = #00ABFC;
 defaultOrange = #FF6A00;
 offWhiteBackground = #FBFAF3;
+highlightOrange = #FFCD90;
 
 PTSansNarrow = 'PT Sans Narrow', sans-serif;
 SourceSansPro = 'Source Sans Pro', sans-serif;
@@ -16,7 +17,7 @@ SourceSansPro = 'Source Sans Pro', sans-serif;
 animDuration = 300ms;
 
 // MOBILE
-phone = "(max-width: 640px)";
+phone = "(max-width: 775px)";
 phonePortrait = "(max-width: 640px) and (orientation: portrait)";
 phoneLandscape = "(max-width: 640px) and (orientation: landscape)";
 
@@ -95,13 +96,6 @@ body
 	}
 }
 
-.page-details
-	width 100%
-	background-color #FDE296
-	padding 20px 10px
-	font-size 125%
-	box-sizing border-box
-
 // size of icon
 .fa.fa-1dot5x
 	font-size 1.5em
@@ -140,6 +134,7 @@ body
 
 // pages
 @import 'home.styl'
+@import 'concert.styl'
 @import 'committee.styl'
 @import 'pastevents.styl'
 @import 'comingsoon.styl'

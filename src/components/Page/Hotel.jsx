@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../Footer';
 
-class Sponsors extends React.Component {
+class Hotel extends React.Component {
 	render() { 
 		const googleMapClass = 'desktop';
 		const googleMapMobileClass = 'mobile';
@@ -68,4 +68,4 @@ class Sponsors extends React.Component {
 	}
 }
 
-export default Sponsors;
+export default Hotel;

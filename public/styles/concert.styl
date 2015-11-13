@@ -1,0 +1,98 @@
+.concert {
+	font-family: SourceSansPro
+
+	.background {
+		background-image url('images/background-concert.jpg')
+		@media (max-width: 800px) { 
+			background-image url('images/background-concert-small.jpg')
+		}
+	}
+
+	.concert-container {
+		display table
+		margin 10px auto
+		text-align center
+		
+		.singer {
+			font-size 400%
+			font-weight 600
+			line-height 1
+			padding-top 10px
+		}
+		.and, 
+		.food {
+			font-size 300%
+			font-weight 200
+			line-height 1
+		}
+		
+		.tagline {
+			font-size 150%
+			margin 20px 0px
+			background highlightOrange
+			padding 10px 10px
+		}
+
+		.photo {
+			background-image url('images/photo-remo.jpg')
+			height: 400px
+			width: 300px
+			background-size cover 
+			background-position center
+			margin 20px auto
+		}
+		
+		.live {
+			font-size 150%
+			font-weight 400
+			background defaultOrange
+			margin 20px 0px 10px 0px 
+			padding 10px
+		}
+		
+		.date,
+		.at,
+		.hotel-address {
+			font-size 150%
+			sup {
+				font-size 60%
+			}
+		}
+
+		.sponsorship {
+			border-top: 1px solid #ffa500;
+			margin: 20px 0px 0px 0px;
+			padding: 20px;
+			font-size: 120%;
+			
+			a {
+				color defaultBlue
+				padding 0px 5px
+			}
+			a:hover {
+				text-decoration underline
+			}
+			a.email {
+				color: black
+				text-decoration underline
+			}
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.concert .concert-container {
+		border-width 0px
+	}
+}
+
+@media (max-width: 600px) {
+	.concert {
+		font-size: 12px
+		
+		.concert-container .photo {
+			height: 300px
+			width: 200px
+		}
+	}
+}

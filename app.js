@@ -22,6 +22,7 @@ var directPage = function(req, res) {
 }
 app.get('/schedule', directPage);
 app.get('/hotel', directPage);
+app.get('/concert', directPage);
 app.get('/committee', directPage);
 app.get('/sponsors', directPage);
 app.get('/contests', directPage);

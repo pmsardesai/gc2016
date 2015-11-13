@@ -15,7 +15,7 @@ class PastEvents extends React.Component {
 				<div className="page-content past-events-container"> 
 					<div className="past-events-container-inner">
 						<div className="page-details">
-							Here, you can find links to documents, websites and videos of previous Goan Conventions.
+							Below are links to documents, websites and videos of previous Goan Conventions.
 						</div>
 
 						{ data.map(c => {

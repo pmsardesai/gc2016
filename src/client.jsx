@@ -3,6 +3,7 @@ import Router, { Route } from 'react-router';
 import App from './components/App';
 import Committee from './components/Page/Committee';
 import ComingSoon from './components/Page/ComingSoon';
+import Concert from './components/Page/Concert';
 import Contests from './components/Page/Contests';
 import Gallery from './components/Page/Gallery';
 import Hotel from './components/Page/Hotel';
@@ -21,6 +22,7 @@ React.render((
     	<Route path="/" component={Home} />
     	<Route path="/schedule" component={Schedule} />
         <Route path="/hotel" component={Hotel} />
+        <Route path="/concert" component={Concert} />
     	<Route path="/committee" component={Committee} />
     	<Route path="/sponsors" component={Sponsors} />
     	<Route path="/contests" component={Contests} />
