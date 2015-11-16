@@ -28,7 +28,7 @@ module.exports =
 		title: "Kids Drawing Contest",
 		description: "Draw your favorite memory of Goa. Let the colors express how you feel about Goa.",
 		css: "drawing",
-		who: "Drawing Contest is open to all kids joining the Goan convention 2016. Group 1 : Ages 4 - 10 Group 2 : Ages 10 - 14",
+		who: "Drawing Contest is open to all kids joining the Goan convention 2016. Group 1 : Ages 4 - 10, Group 2 : Ages 10 - 14",
 		howFirst: "Entry is free. Please send in your entries to",
 		howSubject: "“Drawing Contest – Your name”",
 		howLast: ". Write your name, Age, telephone number and description of the drawing in the body of the e-mail.",
