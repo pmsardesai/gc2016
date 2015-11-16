@@ -13,14 +13,14 @@ class Concert extends React.Component {
 				</div>
 				<div className="page-content concert-container"> 
 					<div className="concert-container-inner">
-						<div className='singer'>Remo Fernandes</div>
+						<div className='singer'>Remo</div>
 						<div className='and'>&</div>
 						<div className='food'>Microwave Papadums</div>
-						<div className='tagline'>Come witness the musical genius of "The Baap of Indian Pop", Padmashri Remo Fernandes</div>
+						<div className='live'>Live in Concert at Goan Convention 2016</div>
 						
 						<div className='photo'></div>
-						
-						<div className='live'>Live in Concert at Goan Convention 2016</div>
+
+						<div className='tagline'>Come witness the musical genius of "The Baap of Indian Pop", Padmashri Remo Fernandes</div>
 						<div className='date'>3<sup>rd</sup> July 2016, 9:30 PM</div>
 						<div className='at'>@</div>
 						<span className='hotel-address'>

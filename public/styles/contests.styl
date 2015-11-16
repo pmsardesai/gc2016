@@ -1,0 +1,155 @@
+.contests {
+	font-family: SourceSansPro
+
+	.background {
+		background-image url('images/background-contests.png')
+	}
+
+	.contests-container {
+		display table
+		margin 10px auto
+		
+		.disclaimer {
+			max-width 680px
+			margin 10px auto
+			padding 10px
+			border-top 1px solid defaultBlue
+			font-size 12px
+			text-align justify
+			
+			.title {
+				font-weight bold
+			}
+		}
+	}
+}
+
+.contest-card {
+	border 1px solid defaultBlue
+	margin 15px 5px 30px 5px
+	max-width 700px
+	
+	.title {
+		font-size 150%
+		background defaultBlue
+		padding 5px 10px
+		margin 2px
+	}
+
+	.description {
+		border-top 1px solid defaultBlue
+		border-bottom 1px solid defaultBlue
+		padding 15px
+		background highlightOrange
+	    font-size 110%
+	}
+	
+	.photo {
+		margin 10px auto
+		background-position center
+		background-size cover
+		border 1px solid black
+	}
+
+	.info {
+		display table
+		padding 10px
+		width 100%
+		box-sizing border-box
+    
+		.left {
+			display table-cell
+			font-weight bold
+			width 175px
+		}
+		
+		.right {
+			display table-cell
+		}
+	}
+	.info.who {
+		border-top 1px solid defaultBlue
+	}
+	
+	.info.how {
+		a {
+			color defaultBlue
+			padding 0px 5px 0px 0px
+		}
+		a:hover {
+			text-decoration underline
+		}
+	}
+	
+	.rules {
+		border-top 1px solid defaultBlue
+		
+		li span:first-child {
+			display none
+		}
+	}
+	
+	.additional {
+		padding 10px
+		font-weight 600
+		text-align center
+		border-top 1px solid defaultBlue
+		background defaultOrange
+	}
+}
+
+.contest-card .photography {
+	background-image url('images/contests/photography.jpg')
+	height 400px;
+	width 300px
+}
+
+.contest-card .drawing {
+	background-image url('images/contests/drawing.jpg')
+	height 400px;
+	width 300px
+}
+
+.contest-card .drama {
+	background-image url('images/contests/drama.jpg')
+	height 275px;
+	width 440px
+}
+
+.contest-card .souvenir {
+	background-image url('images/contests/souvenir.jpg')
+	height 400px;
+	width 300px
+}
+
+.contest-card .karaoke {
+	background-image url('images/contests/karaoke.jpg')
+	height 275px;
+	width 440px
+}
+
+
+@media (max-width: 480px) {
+	.contest-card {
+		font-size 14px
+		
+		.info {
+			.left {
+				width 100px
+			}
+		}
+	}
+	
+	.contest-card .photography,
+	.contest-card .drawing,
+	.contest-card .souvenir {
+		height 200px;
+		width 150px
+	}
+
+	.contest-card .drama,
+	.contest-card .karaoke {
+		height 150px;
+		width 250px
+	}
+}
