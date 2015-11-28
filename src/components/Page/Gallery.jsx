@@ -1,9 +1,23 @@
 import React from 'react';
+import Footer from '../Footer';
 
 class Gallery extends React.Component {
 	render() { 
 		return (
-			<div>Gallery</div>
+			<div className="page gallery">
+				<div className="black-header-background" /> 
+				<div className="page-header">
+					<div className="background" /> 
+					<div className="page-title">Gallery</div>
+				</div>
+				<div className="page-content gallery-container"> 
+					<div className="gallery-container-inner">
+
+						
+					</div>
+				</div>
+				<Footer />
+			</div>
 		);
 	}
 }

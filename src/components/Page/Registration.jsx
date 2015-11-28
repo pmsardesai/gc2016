@@ -13,7 +13,7 @@ class Registration extends React.Component {
 				<div className="page-content registration-container"> 
 					<div className="registration-container-inner">
 						<div className="info first">
-							It gives us immense pleasure to invite you all to the 13th Goan Convention in Orane County, CA. The table below lists the registration fees for the convention. Registration opens in December 2015. Early bird registration is available if you register before March 2016.
+							It gives us immense pleasure to invite you all to the 13th Goan Convention in Orange County, CA. The table below lists the registration fees for the convention. Registration opens in December 2015. Early bird registration is available if you register before March 2016.
 						</div>
 						<div className="info">
 							<div className="highlight">

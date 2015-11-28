@@ -15,7 +15,7 @@ class Concert extends React.Component {
 					<div className="concert-container-inner">
 						<div className='singer'>Remo</div>
 						<div className='and'>&</div>
-						<div className='food'>Microwave Papadums</div>
+						<div className='food'>The Microwave Papadums</div>
 						<div className='live'>Live in Concert at Goan Convention 2016</div>
 						
 						<div className='photo'></div>
@@ -35,7 +35,11 @@ class Concert extends React.Component {
 							<div className='phone'><b>Phone:</b> 214-235-4525</div>
 							<div className='donate'>or 
 								<Link to="/sponsors">Donate</Link>
-								Online</div>
+								Online
+							</div>
+							<div className='learn-more'>To learn more about Remo, visit: 
+								<a href="http://remofernandes.com" target="_blank" className='remo-link'>http://remofernandes.com</a>
+							</div>
 						</div>
 					</div>
 				</div>

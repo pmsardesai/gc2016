@@ -86,7 +86,7 @@ class Sponsors extends React.Component {
 						</div>
 
 						<div className="info buttons">
-							<a className="online disabled">Online Donation<div className="note">(Open in Dec 2015)</div></a>
+							<a className="online" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FH2QCEJV4SSD6" target="_blank">Online Donation</a>
 							<a className="mailin" href="documents/sponsorship-form.pdf" target="_blank">Mail-In Donation</a>
 						</div>
 
