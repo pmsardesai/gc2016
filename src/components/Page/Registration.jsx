@@ -54,8 +54,8 @@ class Registration extends React.Component {
 						</div>
 
 						<div className="info buttons">
-							<a className="online disabled">Online Registration<div className="note">(Open in Dec 2015)</div></a>
-							<a className="mailin disabled">Mail-In Registration<div className="note">(Open in Dec 2015)</div></a> { /*href="documents/registration-form.pdf"*/ }
+							<a className="online" href="http://events.constantcontact.com/register/event?llr=8vkiquvab&oeidk=a07ebskil3720734d23" target="_blank">Online Registration</a>
+							<a className="mailin" href="documents/registration-form.pdf" target="_blank">Mail-In Registration</a>
 						</div>
 
 						<div className="info">
