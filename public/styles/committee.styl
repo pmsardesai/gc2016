@@ -5,6 +5,7 @@
 	
 	.committee-container {
 		display table
+		padding-bottom 30px
 		
 		.contacts-container {
 			display table-row
@@ -38,6 +39,19 @@
 	}
 
 	.footer {
-		position relative
+		position fixed;
+		bottom: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.committee {
+		.committee-container {
+			padding-bottom 0px
+		}
+
+		.footer {
+			position relative;
+		}
 	}
 }

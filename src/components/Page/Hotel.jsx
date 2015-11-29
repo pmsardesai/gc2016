@@ -42,12 +42,12 @@ class Hotel extends React.Component {
 							</div>
 							<div className="info">
 								<div className="cell left">Phone Number</div>
-								<div className="cell right">(714) 825 3333</div>
+								<div className="cell right">(714) 442 1979 </div>
 							</div>
 							<div className="info last">
 								<div className="cell left">Booking Website</div>
 								<div className="cell right">
-									<a href=" http://doubletree.hilton.com/en/dt/groups/personalized/S/STAOCDT-GON-20160702/index.jhtml?WT.mc_id=POG" target="_blank">Click here for hotel reservation online</a>
+									<a href="http://doubletree.hilton.com/en/dt/groups/personalized/S/STAOCDT-GON-20160702/index.jhtml?WT.mc_id=POG" target="_blank">Click here for hotel reservation online</a>
 									<div className="note">For reservation by phone, please call the hotel at (714) 442 1979. Send us an email at <a href="mailto:goanconvention2016@gmail.com" target="_blank" className='email'>goanconvention2016@gmail.com</a> for the promo code.</div>
 								</div>
 							</div>
