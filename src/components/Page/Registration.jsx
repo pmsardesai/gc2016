@@ -53,6 +53,12 @@ class Registration extends React.Component {
 							There are two ways you can register for this event. You may click on “Online Registration" button below and complete the registration form and payment on our secure online payment website. Or you can click on the “Mail-in Registration" button below to download the registration form.
 						</div>
 
+						<div className="info">
+							<div className="highlight">
+							Please note that with online registration, we have to pay $5.50/person as transaction fee. If possible, please do the mail-in registration to save us some money.
+							</div>
+						</div>
+
 						<div className="info buttons">
 							<a className="online" href="http://events.constantcontact.com/register/event?llr=8vkiquvab&oeidk=a07ebskil3720734d23" target="_blank">Online Registration</a>
 							<a className="mailin" href="documents/registration-form.pdf" target="_blank">Mail-In Registration</a>
