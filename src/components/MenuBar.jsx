@@ -25,7 +25,7 @@ class MenuBar extends React.Component {
 			<div className={baseClass}>
 				<Link to="/schedule" className='menu-button' onClick={this.props.onItemClick}>Schedule</Link>
 				<Link to="/hotel" className='menu-button' onClick={this.props.onItemClick}>Hotel</Link>
-				<Link to="/concert" className='menu-button' onClick={this.props.onItemClick}>Concert</Link>
+				<Link to="/comingsoon" className='menu-button' onClick={this.props.onItemClick}>Concert</Link>
 				<Link to="/contests" className='menu-button' onClick={this.props.onItemClick}>Contests</Link>
 				<Link to="/sponsors" className='menu-button' onClick={this.props.onItemClick}>Sponsors</Link>
 				<Link to="/committee" className='menu-button' onClick={this.props.onItemClick}>Committee</Link>
