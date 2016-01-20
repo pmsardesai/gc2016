@@ -26,7 +26,7 @@ class Sponsors extends React.Component {
 							We ask for your commitment to support our goal of making a difference by donating a portion of the proceeds to charitable organizations.
 						</div>
 						<div className="info">
-							Following are the rates to advertise in the souvenir:
+							Following are the rates to advertise in the souvenir (available on a first come first served basis):
 						</div>
 
 						<div className="info">
