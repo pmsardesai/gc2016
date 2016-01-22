@@ -76,11 +76,11 @@ module.exports =
 		}
 	},
 	{
-		name: "Abhaya Karangutkar",
+		name: "Purnima Kamat Tarkar",
 		title: "Editor in Chief",
-		imageCss: "ImgAbhaya",
+		imageCss: "ImgPurnima",
 		social: {
-			email: "mailto:abhaya75@yahoo.com"
+			email: "mailto:purnima.ykt@gmail.com "
 		}
 	}
 ];
