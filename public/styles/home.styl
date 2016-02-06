@@ -78,8 +78,18 @@
 		}
 		
 		.invitation {
-			padding 10px 5px
-		    border-top 1px solid white
+			padding 7px
+		    border-top 1px solid #9F9F9F
+		    font-size 90%
+		    
+		    .fa-envelope {
+		    	padding-right 10px
+		    }
+
+		    a {
+		    	display inline
+		    	text-decoration underline
+		    }
 		}
 	}
 
@@ -104,7 +114,7 @@
 	}
 }
 
-@media (max-width: 550px), (max-height:590px) {
+@media (max-width: 550px), (max-height:610px) {
 	.home {
 		.tagline {
 			font-size 130% 
@@ -138,14 +148,13 @@
 			}
 			
 			.invitation {
-				padding 10px 5px 5px 5px
 				font-size 80%
 			}
 		}
 	}
 }
 
-@media (max-height: 520px) {
+@media (max-height: 560px) {
 	.home {
 		.tagline {
 			padding headerHeight 0px 0px 0px
@@ -176,6 +185,19 @@
 			.button{
 			    padding 4px 15px
 			}
+		}
+	}
+}
+
+@media (max-width: 350px) {
+	.home {
+		.tagline {
+			font-size 110%
+		    text-shadow black 1px 1px 1px
+	    }
+	    
+	    .event-details-container .invitation.message {
+			padding-bottom 0px
 		}
 	}
 }
