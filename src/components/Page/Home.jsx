@@ -30,15 +30,19 @@ class Home extends React.Component {
 						<div className="invitation">
 							A warm invitation to all Goenkars across North America to join us and strengthen our ties with Goa, and connect the younger generation to our culture and heritage
 						</div>
-						<div className="invitation message">
-							<span className="fa fa-envelope"></span>
-							<a href="https://youtu.be/UCfU9UbbH4k" target="_blank">A message from Shri. Manohar Parrikar (Defense Minister of India)</a>
-						</div>
 					</div>
 
 					<div className='button-container'>
 						<Link to='/register' className='button register-button'>Register</Link>
 						<Link to='/sponsors' className='button donate-button'>Donate</Link>
+					</div>
+
+					<div className="parrikar-video-container">
+						<div className="message">
+							<span className="fa fa-envelope"></span>
+							<span>A message from Shri. Manohar Parrikar (Defense Minister of India)</span>
+							<a className="youtube-link" href="https://youtu.be/UCfU9UbbH4k" target="_blank"></a>
+						</div>
 					</div>
 				</div>
 				<Footer />

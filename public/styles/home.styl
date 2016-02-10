@@ -22,7 +22,7 @@
 	
 	.tagline {
 		font-size 200%
-	    padding headerHeight 0px 10px 0px
+	    padding 70px 0px 10px 0px
 	    text-shadow black 2px 2px 2px
 	}
 	
@@ -81,21 +81,11 @@
 			padding 7px
 		    border-top 1px solid #9F9F9F
 		    font-size 90%
-		    
-		    .fa-envelope {
-		    	padding-right 10px
-		    }
-
-		    a {
-		    	display inline
-		    	text-decoration underline
-		    }
 		}
 	}
 
 	.button-container {
-		padding-top 10px
-		padding-bottom 5px
+		padding 10px 0px
 		
 		.button {
 			background defaultBlue
@@ -109,6 +99,37 @@
 		}
 	}
 	
+	.parrikar-video-container {
+		padding 5px 0px
+		background rgba(0, 0, 0, 0.7)
+		width 400px
+		margin 5px auto
+
+		.message {
+			padding 7px
+		    font-size 90%
+		    
+		    .fa-envelope {
+		    	padding-right 10px
+		    }
+
+		    a {
+		    	display inline
+		    	text-decoration underline
+		    }
+		    
+		    .youtube-link {
+				background-image url('images/home-parrikar.jpg')
+				height 100px
+				width 177px
+				background-size cover
+				margin 5px auto 0px auto
+				cursor pointer
+				display block
+			}
+		}
+	}
+
 	.footer {
 		display table-row
 	}
@@ -151,13 +172,19 @@
 				font-size 80%
 			}
 		}
+		
+		.parrikar-video-container {
+			width 250px 
+			padding 5px 0px 10px 0px
+			margin 3px auto
+		}
 	}
 }
 
 @media (max-height: 560px) {
 	.home {
 		.tagline {
-			padding headerHeight 0px 0px 0px
+			padding-bottom 0px
 		    font-size 120%
 		}
 		.event-details-container {
@@ -180,11 +207,16 @@
 			}
 		}
 		.button-container {
-			padding-top 0px
+			padding 0px
 			
 			.button{
 			    padding 4px 15px
 			}
+		}
+		
+		.parrikar-video-container {
+			width 200px
+			font-size 80%
 		}
 	}
 }
@@ -195,9 +227,5 @@
 			font-size 110%
 		    text-shadow black 1px 1px 1px
 	    }
-	    
-	    .event-details-container .invitation.message {
-			padding-bottom 0px
-		}
 	}
 }
