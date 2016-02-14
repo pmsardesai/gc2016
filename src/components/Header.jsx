@@ -7,7 +7,12 @@ class Header extends React.Component {
 		/*
 		* The click event handler.
 		*/
-		onClick: React.PropTypes.func
+		onClick: React.PropTypes.func,
+
+		/*
+		* The current active page.
+		*/
+		activePage: React.PropTypes.string
 	}
 
 	onMenuButtonToggle() {
@@ -19,7 +24,8 @@ class Header extends React.Component {
 			<div className='header'>
 				<div className='header-content'>
 					<Link to='/' className='logo' />
-					<MenuBar type='web' onItemClick={this.onMenuButtonToggle.bind(this)} />
+					<MenuBar type='web' activePage={this.props.activePage} onItemClick={this.onMenuButtonToggle.bind(this)} />
+					<MenuBar type='mobile' activePage={this.props.activePage} onItemClick={this.onMenuButtonToggle.bind(this)} />
 					<button
 						className="hamburger-icon fa fa-bars fa-2x"
 						onClick={this.props.onClick}

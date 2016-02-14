@@ -2,7 +2,6 @@ import React from 'react';
 import GoogleAnalytics from 'react-google-analytics';
 import {Initializer} from 'react-google-analytics';
 import Header from './Header';
-import MenuBar from './MenuBar';
 
 class App extends React.Component {
 	static propTypes = {
@@ -31,8 +30,6 @@ class App extends React.Component {
 			menuState: (state === 'unpinned') ? 'pinned' : 'unpinned',
 			isNewPage: false
 		});
-
-		window.scrollTo(0, 0);
 	}
 
 	/*
@@ -41,7 +38,8 @@ class App extends React.Component {
 	componentWillReceiveProps(nextProps) {
 		this.setState( {
 			isNewPage: true,
-			pathname: nextProps.location.pathname
+			pathname: nextProps.location.pathname,
+			activePage: nextProps.routes[1].page
 		});
 	}
 
@@ -58,9 +56,8 @@ class App extends React.Component {
 
 		return (
 			<div className={className}>
-				<Header onClick={this.onToggleMenuState.bind(this)} />
+				<Header activePage={this.state.activePage} onClick={this.onToggleMenuState.bind(this)} />
 				{ this.props.children }
-				<MenuBar type='mobile' onItemClick={this.onToggleMenuState.bind(this)} />
 				<Initializer />
 			</div>
 		);

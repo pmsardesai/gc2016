@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Footer from '../Footer';
+import ComingSoon from './ComingSoon';
 
 class Concert extends React.Component {
 	render() { 
 		return (
-			<div className="page concert">
+			<div className="page coming-soon">
+			{ /*<div className="page concert">
 				<div className="black-header-background" /> 
 				<div className="page-header">
 					<div className="background" /> 
@@ -44,6 +46,8 @@ class Concert extends React.Component {
 					</div>
 				</div>
 				<Footer />
+			</div>*/ }
+				<ComingSoon />
 			</div>
 		);
 	}

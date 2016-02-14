@@ -55,9 +55,9 @@ class Hotel extends React.Component {
 
 						<div className="map-container">
 							<iframe className={googleMapClass} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.321519314015!2d-117.86819264982368!3d33.70062838060833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdecfd7f12573%3A0xed1e13cc1d40ece9!2s201+E+MacArthur+Blvd%2C+Santa+Ana%2C+CA+92707!5e0!3m2!1sen!2sus!4v1447038002825" 
-							frameborder="0" allowfullscreen></iframe>
+							frameBorder="0" allowFullScreen></iframe>
 							<iframe className={googleMapMobileClass} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.321519314015!2d-117.86819264982368!3d33.70062838060833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdecfd7f12573%3A0xed1e13cc1d40ece9!2s201+E+MacArthur+Blvd%2C+Santa+Ana%2C+CA+92707!5e0!3m2!1sen!2sus!4v1447038002825" 
-							frameborder="0" allowfullscreen></iframe>
+							frameBorder="0" allowFullScreen></iframe>
 						</div>
 					</div>
 				</div>

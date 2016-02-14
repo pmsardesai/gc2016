@@ -17,19 +17,19 @@ import { createHistory } from 'history';
 const browserHistory = createHistory();
 
 React.render((
-  <Router history={browserHistory}>
+  <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
     <Route component={App}>
-    	<Route path="/" component={Home} />
-    	<Route path="/schedule" component={Schedule} />
-        <Route path="/hotel" component={Hotel} />
-        <Route path="/concert" component={Concert} />
-    	<Route path="/committee" component={Committee} />
-    	<Route path="/sponsors" component={Sponsors} />
-    	<Route path="/contests" component={Contests} />
-    	<Route path="/gallery" component={Gallery} />
-    	<Route path="/pastevents" component={PastEvents} />
-        <Route path="/register" component={Registration} />
-        <Route path="/comingsoon" component={ComingSoon} />
+    	<Route path="/" page="home" component={Home} />
+    	<Route path="/schedule" page="schedule" component={Schedule} />
+        <Route path="/hotel" page="hotel" component={Hotel} />
+        <Route path="/concert" page="concert" component={Concert} />
+    	<Route path="/committee" page="committee" component={Committee} />
+    	<Route path="/sponsors" page="sponsors" component={Sponsors} />
+    	<Route path="/contests" page="contests" component={Contests} />
+    	<Route path="/gallery" page="gallery" component={Gallery} />
+    	<Route path="/pastevents" page="pastevents" component={PastEvents} />
+        <Route path="/register" page="register" component={Registration} />
+        <Route path="/comingsoon" page="comingsoon" component={ComingSoon} />
     </Route>
   </Router>
 ), document.getElementById('react-root'));
