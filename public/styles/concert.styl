@@ -3,9 +3,6 @@
 
 	.background {
 		background-image url('images/background/concert.png')
-		@media (max-width: 800px) { 
-			background-image url('images/background/concert-small.png')
-		}
 	}
 
 	.concert-container {
@@ -14,68 +11,53 @@
 		text-align center
 		
 		.singer {
-			font-size 400%
-			font-weight 600
-			line-height 1
-			padding-top 10px
-		}
-		.and, 
-		.food {
-			font-size 300%
-			font-weight 200
-			line-height 1
-		}
-		
-		.tagline {
-			font-size 150%
-			margin 20px 0px
-			background highlightOrange
-			padding 10px 10px
-		}
-
-		.photo {
-			background-image url('images/photo-remo.jpg')
-			height: 400px
-			width: 300px
-			background-size cover 
-			background-position center
-			margin 20px auto
-		}
-		
-		.live {
-			font-size 150%
-			font-weight 400
-			background defaultOrange
-			margin 20px 0px 10px 0px 
-			padding 10px
-		}
-		
-		.date,
-		.at,
-		.hotel-address {
-			font-size 150%
-			sup {
-				font-size 60%
-			}
-		}
-
-		.sponsorship {
-			border-top: 1px solid #ffa500;
-			margin: 20px 0px 0px 0px;
-			padding: 20px;
-			font-size: 120%;
+			border 1px solid defaultBlue
+			margin 10px 10px 20px 10px
 			
-			a {
-				color defaultBlue
-				padding 0px 5px
-			}
-			a:hover {
-				text-decoration underline
+			.name {
+				font-size 150%
+				background defaultBlue
+				padding 5px 10px
+				margin 2px
 			}
 			
-			.learn-more{
-				font-size: 90%;
-				padding-top: 10px;
+			.photo {
+				margin 10px auto
+				background-position center
+				background-size cover
+				border 1px solid black
+				
+				&.sonia {
+					background-image url('images/concert/sonia.jpg')
+					height 300px
+					width 350px
+				}
+				&.varun {
+					background-image url('images/concert/varun.jpg')
+					height 300px
+					width 350px
+				}
+				&.mukesh {
+					background-image url('images/concert/mukesh.jpg')
+					height 400px
+					width 300px
+				}
+			}
+
+			.description {
+				max-width 700px
+				text-align justify
+				border-top 1px solid defaultBlue
+				padding 15px
+				font-size 110%
+				
+				a {
+					color defaultBlue
+				}
+				
+				&.sonia a {
+					padding-left 5px
+				}
 			}
 		}
 	}
@@ -90,10 +72,5 @@
 @media (max-width: 600px) {
 	.concert {
 		font-size: 12px
-		
-		.concert-container .photo {
-			height: 300px
-			width: 200px
-		}
 	}
 }
