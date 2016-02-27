@@ -6,6 +6,7 @@ import ComingSoon from './components/Page/ComingSoon';
 import Concert from './components/Page/Concert';
 import Contests from './components/Page/Contests';
 import Gallery from './components/Page/Gallery';
+import Highlights from './components/Page/Highlights';
 import Hotel from './components/Page/Hotel';
 import Home from './components/Page/Home';
 import PastEvents from './components/Page/PastEvents';
@@ -20,6 +21,7 @@ React.render((
   <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
     <Route component={App}>
     	<Route path="/" page="home" component={Home} />
+        <Route path="/highlights" page="highlights" component={Highlights} />
     	<Route path="/schedule" page="schedule" component={Schedule} />
         <Route path="/hotel" page="hotel" component={Hotel} />
         <Route path="/concert" page="concert" component={Concert} />

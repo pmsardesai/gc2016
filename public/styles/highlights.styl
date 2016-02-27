@@ -1,0 +1,68 @@
+.highlights {
+	font-family: SourceSansPro
+
+	.background {
+		background-image url('images/background/highlights.jpg')
+		background-size 1368px 400px
+		background-repeat no-repeat
+	}
+
+	.highlight-container {
+		display table
+		margin 10px auto
+		text-align center
+		
+		.highlight {
+			border 1px solid defaultBlue
+			margin 10px 10px 20px 10px
+			
+			.name {
+				font-size 150%
+				background defaultBlue
+				padding 5px 10px
+				margin 2px
+			}
+			
+			.photo {
+				margin 10px auto
+				background-position center
+				background-size cover
+				border 1px solid black
+				height 375px
+				width 350px
+
+				&.jonathan {
+					background-image url('images/highlights/jonathan.jpg')
+				}
+				&.sidhanath {
+					background-image url('images/highlights/sidhanath.jpg')
+				}
+				
+				@media (max-width: 600px) {
+					height 300px
+					width 275px
+				}
+			}
+
+			.description {
+				max-width 700px
+				text-align justify
+				border-top 1px solid defaultBlue
+				padding 15px
+				font-size 110%
+			}
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.highlights .highlight-container {
+		border-width 0px
+	}
+}
+
+@media (max-width: 600px) {
+	.highlights {
+		font-size: 12px
+	}
+}

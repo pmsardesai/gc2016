@@ -31,7 +31,7 @@ class Concert extends React.Component {
 							<div className="name">Mukesh Ghatwal</div>
 							<div className="photo mukesh"> </div>
 							<div className="description"> 
-								The Man who created the Lusofonia Theme Song, The IFFI (2015) theme song, ISL (Indian Soccer league) theme song and so many other songs to make Goa proud. Mukesh studied audio engineering at the ‘SAE Technology College’ and theory of music at the Trinity College of London. Mukesh is the lead musician for the Remo Fernandes band “The Microwave Papadums”.  He represented Goa in ‘Sa Re Ga Ma Band Special’ for Zee TV, held at Delhi in 2000. He composed the music for 26th Jan floats representing Goa at Delhi several times. He has won several awards for his exceptional contribution to music, including the “<a href="https://www.youtube.com/watch?v=fqDrf50QmLs&feature=youtu.be" target="_blank">Adarsh Goenkar Award for 2015</a>”. We are really fortunate to have him at the 2016 Goan Convention.
+								Mukesh Ghatwal is a music director, composer and arranger, who created many theme songs for state, national and international events like the International Lusofonia Games theme song, IFFI anthem, FC Goa, JCI and  many to make Goa proud. Mukesh has composed and arranged music for many documentaries and films, like movie 'Digant' which was officially chosen for CANNES festival by directorate of film festival of India. Besides that, he has done music in Konkani, Hindi, English and Marathi for albums, jingles, festival theme songs, news channels, companies and more. He has won several awards for his contribution for music, including the GOA SRUJAN PURSKAR 2013 and ADARSH GOENKAR award 2014.
 							</div>
 						</div>
 						<div className="singer">

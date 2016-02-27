@@ -32,6 +32,7 @@ class MenuBar extends React.Component {
 		const baseClass = 'menu-bar ' + 
 							(this.props.type === 'mobile' ? 'mobile' : 'web');
 
+		const highlights = this._getButtonCss('highlights');
 		const scheduleCss = this._getButtonCss('schedule');
 		const hotelCss = this._getButtonCss('hotel');
 		const concertCss = this._getButtonCss('concert');
@@ -44,6 +45,7 @@ class MenuBar extends React.Component {
 
 		return (
 			<div className={baseClass}>
+				<Link to="/highlights" className={highlights} onClick={this.props.onItemClick}>Highlights</Link>
 				<Link to="/schedule" className={scheduleCss} onClick={this.props.onItemClick}>Schedule</Link>
 				<Link to="/hotel" className={hotelCss} onClick={this.props.onItemClick}>Hotel</Link>
 				<Link to="/concert" className={concertCss} onClick={this.props.onItemClick}>Concert</Link>

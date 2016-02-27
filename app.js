@@ -20,6 +20,7 @@ app.use('/images', express.static(path.join(__dirname, 'public', 'images')));
 var directPage = function(req, res) {
 	res.sendFile(path.join(__dirname, 'build', 'index.html'));
 }
+app.get('/highlights', directPage);
 app.get('/schedule', directPage);
 app.get('/hotel', directPage);
 app.get('/concert', directPage);
