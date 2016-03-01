@@ -42,8 +42,9 @@ class Concert extends React.Component {
 						</div>
 						<div className="singer">
 							<div className="name">Mozwin Noronha</div>
+							<div className="photo mozwin"> </div>
 							<div className="description"> 
-								Mozwin is a young upcoming talented musician from Goa. He comes from a musical family and music runs in his blood. He started playing drums at the age of 5 and now grown up into a fabulous young talent. He played drums at IFFI (International Film Festival of India) at the age of 8. He is currently pursuing his education in Music Production in London. Other than drums, he also plays lead guitar, bass guitar and mandolin.
+								Mozwin comes from a musical family and music runs in his blood. He started playing drums at the age of 6, and played drum solos at IFFI in Goa at the age of 8. He learned to read and write music from a well know violin and Mandolin teacher, Mr. Avelino from Loutolim. He is an all around musician and plays keyboard, bass guitar and lead guitar for retro and pop songs. Mozwin plays drums for his college band and will be releasing their own album around Christmas this year. He is currently pursuing his education in music production at Uxbridge college in London.
 							</div>
 						</div>
 					</div>
