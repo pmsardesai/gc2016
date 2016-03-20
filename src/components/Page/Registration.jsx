@@ -1,4 +1,5 @@
 import React from 'react';
+import Attendees from '../Attendees';
 import Footer from '../Footer';
 
 class Registration extends React.Component {
@@ -73,6 +74,12 @@ class Registration extends React.Component {
 							Mail to:
 							<div className="indent">Rohin Parkar, 7189 Galli Ct, Unit#4, San Jose CA 95129, USA</div>
 						</div>
+
+						<div className="info whos-coming">
+							Who is coming so far?
+							<Attendees />
+						</div>
+
 					</div>
 				</div>
 				<Footer />

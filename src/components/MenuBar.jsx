@@ -39,7 +39,7 @@ class MenuBar extends React.Component {
 		const contestsCss = this._getButtonCss('contests');
 		const sponsorsCss = this._getButtonCss('sponsors');
 		const committeeCss = this._getButtonCss('committee');
-		const galleryCss = this._getButtonCss('gallery');
+		//const galleryCss = this._getButtonCss('gallery');
 		const pastEventsCss = this._getButtonCss('pastevents');
 		const registerCss = this._getButtonCss('register');
 
@@ -52,7 +52,7 @@ class MenuBar extends React.Component {
 				<Link to="/contests" className={contestsCss} onClick={this.props.onItemClick}>Contests</Link>
 				<Link to="/sponsors" className={sponsorsCss} onClick={this.props.onItemClick}>Sponsors</Link>
 				<Link to="/committee" className={committeeCss} onClick={this.props.onItemClick}>Committee</Link>
-				<Link to="/gallery" className={galleryCss} onClick={this.props.onItemClick}>Gallery</Link>
+				{ /*<Link to="/gallery" className={galleryCss} onClick={this.props.onItemClick}>Gallery</Link>*/ }
 				<Link to="/pastevents" className={pastEventsCss} onClick={this.props.onItemClick}>Past Events</Link>
 				<Link to="/register" className={registerCss} onClick={this.props.onItemClick}>Register</Link>
 			</div>
