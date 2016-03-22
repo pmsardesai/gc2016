@@ -5,6 +5,11 @@
 module.exports =
 [
 	{
+		lastName: "Araligidad",
+		firstNames: "Nilesh, Varsha Jagdale",
+		location: "Sunnyvale, CA"
+	},
+	{
 		lastName: "Bosco",
 		firstNames: "Jonathan",
 		location: "San Diego, CA"
@@ -75,6 +80,16 @@ module.exports =
 		location: "Sunnyvale, CA"
 	},
 	{
+		lastName: "Lotlikar",
+		firstNames: "Sandeep, Madhavi, Piyusha, Narsimha Nimish",
+		location: "Elmont, NY"
+	},
+	{
+		lastName: "Lotlikar",
+		firstNames: "Ulhas, Snehaprabha",
+		location: "Muttontown, NY"
+	},
+	{
 		lastName: "McBride",
 		firstNames: "Agnes",
 		location: "Santa Ana, CA"
@@ -82,7 +97,7 @@ module.exports =
 	{
 		lastName: "Nabar",
 		firstNames: "Nandan, Mohini Kamat, Neha",
-		location: "West Covina, CA"
+		location: "Fremont, CA"
 	},
 	{
 		lastName: "Parkar",
@@ -108,6 +123,11 @@ module.exports =
 		lastName: "Sanvordeker",
 		firstNames: "Dilip, Meenal",
 		location: "Irvine, CA"
+	},
+	{
+		lastName: "Sanwardeker",
+		firstNames: "Milind, Veena",
+		location: "North Canton, OH"
 	},
 	{
 		lastName: "Sardesai",
