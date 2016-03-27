@@ -131,6 +131,11 @@ module.exports =
 	},
 	{
 		lastName: "Sardesai",
+		firstNames: "Mahesh, Nita, Pooja",
+		location: "Mississauga, ON, Canada"
+	},
+	{
+		lastName: "Sardesai",
 		firstNames: "Raj, Smeeta, Nolan",
 		location: "Arcadia, CA"
 	},
