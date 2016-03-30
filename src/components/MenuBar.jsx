@@ -45,16 +45,16 @@ class MenuBar extends React.Component {
 
 		return (
 			<div className={baseClass}>
-				<Link to="/highlights" className={highlights} onClick={this.props.onItemClick}>Highlights</Link>
+				<Link to="/register" className={registerCss} onClick={this.props.onItemClick}>Register</Link>
+				<Link to="/highlights" className={highlights} onClick={this.props.onItemClick}>Attractions</Link>
 				<Link to="/schedule" className={scheduleCss} onClick={this.props.onItemClick}>Schedule</Link>
-				<Link to="/hotel" className={hotelCss} onClick={this.props.onItemClick}>Hotel</Link>
 				<Link to="/concert" className={concertCss} onClick={this.props.onItemClick}>Concert</Link>
 				<Link to="/contests" className={contestsCss} onClick={this.props.onItemClick}>Contests</Link>
-				<Link to="/sponsors" className={sponsorsCss} onClick={this.props.onItemClick}>Sponsors</Link>
+				<Link to="/hotel" className={hotelCss} onClick={this.props.onItemClick}>Hotel</Link>
 				<Link to="/committee" className={committeeCss} onClick={this.props.onItemClick}>Committee</Link>
+				<Link to="/sponsors" className={sponsorsCss} onClick={this.props.onItemClick}>Sponsors</Link>
 				{ /*<Link to="/gallery" className={galleryCss} onClick={this.props.onItemClick}>Gallery</Link>*/ }
 				<Link to="/pastevents" className={pastEventsCss} onClick={this.props.onItemClick}>Past Events</Link>
-				<Link to="/register" className={registerCss} onClick={this.props.onItemClick}>Register</Link>
 			</div>
 		);
 	}
