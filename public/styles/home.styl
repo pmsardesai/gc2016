@@ -20,9 +20,17 @@
 		background rgba(0, 0, 0, 0.7)
 	}
 	
+	.extension {
+		padding 10px 0px 10px 0px
+		background defaultOrange
+		width 500px
+		margin 60px auto 0px auto
+		font-size 125%
+	}
+	
 	.tagline {
 		font-size 200%
-	    padding 70px 0px 10px 0px
+	    padding 10px 0px 10px 0px
 	    text-shadow black 2px 2px 2px
 	}
 	
@@ -93,17 +101,12 @@
 		    padding 8px 30px
 		    font-size 125% //20px
 		}
-		
-		.register-button {
-			margin-right 10px
-		}
 	}
 	
 	.parrikar-video-container {
-		padding 5px 0px
-		background rgba(0, 0, 0, 0.7)
 		width 400px
-		margin 5px auto
+		margin 0px auto
+		border-top 1px solid #9F9F9F
 
 		.message {
 			padding 7px
@@ -129,14 +132,31 @@
 			}
 		}
 	}
+	
+	.more-description {
+		font-size 90%
+		margin 0px 20px 0px 0px
+		li.point {
+			text-align left
+		}
+	}
 
 	.footer {
 		display table-row
 	}
 }
 
+@media (max-width: 500px), (max-height:1020px) {
+	.home .extension {
+		width 100%
+	}
+}
+
 @media (max-width: 550px), (max-height:610px) {
 	.home {
+		.extension {
+			font-size 100%
+		}
 		.tagline {
 			font-size 130% 
 		}

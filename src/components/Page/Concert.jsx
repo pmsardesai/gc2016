@@ -12,7 +12,7 @@ class Concert extends React.Component {
 				</div>
 				<div className="page-content concert-container"> 
 					<div className="concert-container-inner">
-						<div className="singer">
+						<div className="singer hidden">
 							<div className="name">Sonia Shirsat</div>
 							<div className="photo sonia"> </div>
 							<div className="description sonia"> 
