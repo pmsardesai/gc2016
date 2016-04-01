@@ -80,7 +80,15 @@ module.exports =
 		title: "Editor in Chief",
 		imageCss: "ImgPurnima",
 		social: {
-			email: "mailto:purnima.ykt@gmail.com "
+			email: "mailto:purnima.ykt@gmail.com"
+		}
+	},
+	{
+		name: "Vaishnavi Buyao",
+		title: "Registration Coordinator",
+		imageCss: "ImgVaishnavi",
+		social: {
+			email: "mailto:prabhuvaishnavi@gmail.com"
 		}
 	}
 ];
