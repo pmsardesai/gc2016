@@ -32,25 +32,22 @@ class Schedule extends React.Component {
 								<tr>
 									<td className="time">2:30 PM</td>
 									<td className="event" rowSpan="2">Registration</td>
-									<td className="event empty"></td>
+									<td className="event" rowSpan="2">Shuttle service from SNA airport can be requested by calling the hotel</td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">3:00 PM</td>
-									<td className="event" rowSpan="3">Garam Cha, Bhaji ani Thand Limbu Sarbat</td>
-									<td className="event" rowSpan="4">Youth and Kids Activities</td>
+									<td className="event" rowSpan="2">Garam Cha, Bhaji ani Thand Limbu Sarbat</td>
 								</tr>
 								<tr>
 									<td className="time">4:00 PM</td>
 									<td className="event empty"></td>
-								</tr>
-								<tr>
-									<td className="time">4:30 PM</td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
-									<td className="time">5:00 PM</td>
+									<td className="time">4:30 PM</td>
 									<td className="event">Welcome Ceremony</td>
+									<td className="event">Youth and Kids Activities</td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
@@ -66,13 +63,13 @@ class Schedule extends React.Component {
 								</tr>
 								<tr>
 									<td className="time">7:30 PM</td>
-									<td className="event">Cocktail hour and dinner</td>
+									<td className="event">Cocktail hour, followed by dinner</td>
 									<td className="event empty"></td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">9:00 PM (until night)</td>
-									<td className="event">Musical Night with Sidhanath Buyao and Karaoke</td>
+									<td className="event highlight">Musical Night with Sidhanath Buyao and Karaoke</td>
 									<td className="event empty"></td>
 									<td className="event empty"></td>
 								</tr>
@@ -88,7 +85,7 @@ class Schedule extends React.Component {
 									<td className="time">7:00 AM</td>
 									<td className="event">Fitness dance boot camp by Jonathan Bosco</td>
 									<td className="event" rowSpan="2">Breakfast</td>
-									<td className="event empty"></td>
+									<td className="event">Yoga</td>
 								</tr>
 								<tr>
 									<td className="time">8:00 AM</td>
@@ -133,36 +130,42 @@ class Schedule extends React.Component {
 								</tr>
 								<tr>
 									<td className="time">2:30 PM</td>
-									<td className="event">Vanhibailyo Vasryo: Siesta/Pool time</td>
+									<td className="event empty"></td>
+									<td className="event empty"></td>
+									<td className="event empty"></td>
+								</tr>
+								<tr>
+									<td className="time">3:00 PM</td>
+									<td className="event highlight">Indian classical performance by Saili Oak</td>
 									<td className="event" rowSpan="2">Bowling for young adults (15-22)</td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
-									<td className="time">4:00 PM</td>
+									<td className="time">4:30 PM</td>
 									<td className="event">Tea time, GOA presentation</td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">5:00 PM</td>
+									<td className="event highlight">Konkani Natak</td>
+									<td className="event empty"></td>
+									<td className="event empty"></td>
+								</tr>
+								<tr>
+									<td className="time">5:45 PM</td>
 									<td className="event">Ami Goenkar - Program for ageless kids</td>
 									<td className="event empty"></td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
-									<td className="time">7:00 PM</td>
-									<td className="event empty"></td>
-									<td className="event empty"></td>
-									<td className="event empty"></td>
-								</tr>
-								<tr>
 									<td className="time">7:30 PM</td>
-									<td className="event">Cocktail hour, Dinner</td>
+									<td className="event">Cocktail hour followed by dinner</td>
 									<td className="event empty"></td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">9:00 PM</td>
-									<td className="event">Sonia Shirsat, Varun Carvalho & Mukesh Ghatwal Live in Concert</td>
+									<td className="event highlight">Sonia Shirsat, Varun Carvalho & Mukesh Ghatwal Live in Concert</td>
 									<td className="event empty"></td>
 									<td className="event empty"></td>
 								</tr>
@@ -176,13 +179,18 @@ class Schedule extends React.Component {
 								</tr>
 								<tr>
 									<td className="time">7:00 AM</td>
-									<td className="event">Yoga</td>
-									<td className="event" rowSpan="2">Breakfast</td>
+									<td className="event">Zumba</td>
+									<td className="event" rowSpan="3">Breakfast</td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">8:00 AM</td>
 									<td className="event empty"></td>
+									<td className="event empty"></td>
+								</tr>
+								<tr>
+									<td className="time">9:00 AM</td>
+									<td className="event">A better Goa: Group Discussion</td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
