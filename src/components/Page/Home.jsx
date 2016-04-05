@@ -44,11 +44,14 @@ class Home extends React.Component {
 						</div>
 						<ul className="more-description">
 							<li className="point">Enjoy authentic Goan cuisine</li>
-							<li className="point">A musical concert by Sonia Shirsat, Varun Carvalho and Mukesh Ghatwal</li>
-							<li className="point">Guest of honor, Sidhanath Buyao will present some great Konkani music</li>
+							<li className="point">An electric Goan musical concert by Sonia Shirsat, Varun Carvalho and Mukesh Ghatwal</li>
+							<li className="point">Musical night by the Guest of honor, Sidhanath Buyao</li>
 							<li className="point">Opportunity for Goans of all ages to perform and show off their talents</li>
-							<li className="point">Indoor and outdoor activities for all ages including Hip Hop dance class, volleyball tournament, Bowling, Face painting and lot more</li>
-							<li className="point">Fitness dance lessons to let you burn the excess fat consumed at the dinners</li>
+							<li className="point">Konkani natak presented by Goans in America</li>
+							<li className="point">Karaoke singing and dancing with the DJ</li>
+							<li className="point">Indoor and outdoor activities for all ages including Hip Hop dance class, volleyball tournament, bowling, face painting and lots more</li>
+							<li className="point">Fitness dance lessons by Jonathan Bosco</li>
+							<li className="point">Indian classical music by Saili Oak</li>
 						</ul>
 					</div>
 
