@@ -312,7 +312,7 @@ module.exports =
 	},
 	{
 		lastName: "Walke",
-		firstNames: "Abhijit, Arti",
+		firstNames: "Abhijit, Arti Ramnathkar",
 		location: "San Diego, CA",
 		count: 2
 	}
