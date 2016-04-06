@@ -20,6 +20,13 @@ class Concert extends React.Component {
 							</div>
 						</div>
 						<div className="highlight">
+							<div className="name">Saili Oak</div>
+							<div className="photo saili"> </div>
+							<div className="description"> 
+								Saili Oak will be performing live at the Goan Convention 2016 on 3rd July afternoon. A finalist on the popular reality TV series Zee Marathi SaReGaMaPa, Saili is a senior disciple of Dr. Ashwini Bhide Deshpande, a leading vocalist of the Jaipur-Atrauli gharana. She has established her own identity with enriched talent in classical as well as semi-classical music. Saili has been learning music since the age of three and has given performances at music festivals all over India and abroad. Some of her memorable performances include the Summer Sounds festival at the Hollywood bowl, Vedic Heritage in New York and Beyond Borders concert at the University of Maine. Saili has been awarded the prestigious Pt.Jasraj Yuva award, Pt Vasantrao Deshpande Yuva award and Gaanwardhan Award.
+							</div>
+						</div>
+						<div className="highlight">
 							<div className="name">Jonathan Bosco</div>
 							<div className="photo jonathan"> </div>
 							<div className="description"> 

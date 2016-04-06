@@ -2,10 +2,13 @@ import React from 'react';
 import AttendeesInfo from '../constants/Attendees';
 
 class Attendees extends React.Component {
+
 	_renderAttendee() {
 		let blocks = [];
+		let total = 0;
 		for (let i = 0; i < AttendeesInfo.length; i++) {
 			let info = AttendeesInfo[i];
+			total += info.count;
 			blocks.push(
 				<div className="attendee-container">
 					<div className="left"> 
