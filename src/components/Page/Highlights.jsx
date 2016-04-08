@@ -24,6 +24,11 @@ class Concert extends React.Component {
 							<div className="photo saili"> </div>
 							<div className="description"> 
 								Saili Oak will be performing live at the Goan Convention 2016 on 3rd July afternoon. A finalist on the popular reality TV series Zee Marathi SaReGaMaPa, Saili is a senior disciple of Dr. Ashwini Bhide Deshpande, a leading vocalist of the Jaipur-Atrauli gharana. She has established her own identity with enriched talent in classical as well as semi-classical music. Saili has been learning music since the age of three and has given performances at music festivals all over India and abroad. Some of her memorable performances include the Summer Sounds festival at the Hollywood bowl, Vedic Heritage in New York and Beyond Borders concert at the University of Maine. Saili has been awarded the prestigious Pt.Jasraj Yuva award, Pt Vasantrao Deshpande Yuva award and Gaanwardhan Award.
+								
+								<div className="more-details">
+									You can find more about Saili  
+									<a className="here" href="http://www.sailioak.com/" target="_blank">here</a>.
+								</div>
 							</div>
 						</div>
 						<div className="highlight">
@@ -37,6 +42,7 @@ class Concert extends React.Component {
 						<div className="highlight">
 							<div className="name">Blaze brings his talent to Southern California all the way from Goa, India</div>
 							<div className="photo blaze"> </div>
+							<a className="blaze-menu" href="documents/attractions-menu.pdf" target="_blank">Menu</a>
 							<div className="description"> 
 								Coming from a third generation of catering business, Blaze started young, helping out the family with their catering and restaurant business. Blaze pursued his culinary career in Carnival Cruise Lines for over 12 years and then in Hyatt Hotels in Pittsburg, PA and La Jolla, San Diego and has been rewarded with many culinary awards. He is accomplished in all kinds of cuisines of around the world and specializes in Goan food. He has catered for Goan weddings and other events from Bakersfield to San Diego , CA. Blaze is happy to bring his culinary expertise to South California to tease your taste buds.
 							</div>
