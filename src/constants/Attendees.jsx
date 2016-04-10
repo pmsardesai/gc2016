@@ -126,6 +126,12 @@ module.exports =
 	},
 	{
 		lastName: "Kamat",
+		firstNames: "Varsha, Sagar",
+		location: "Edison, NJ",
+		count: 2
+	},
+	{
+		lastName: "Kamat",
 		firstNames: "Vishnu, Laxmi, Rupini, Rishab",
 		location: "Cupertino, CA",
 		count: 4
@@ -201,6 +207,12 @@ module.exports =
 		firstNames: "Nandan, Mohini Kamat, Neha",
 		location: "Fremont, CA",
 		count: 3
+	},
+	{
+		lastName: "Pai",
+		firstNames: "Vikram, Shubhra Sambari",
+		location: "Alamo, CA",
+		count: 2
 	},
 	{
 		lastName: "Parkar",
@@ -279,6 +291,12 @@ module.exports =
 		firstNames: "Maya",
 		location: "Curchorem, Goa, India",
 		count: 1
+	},
+	{
+		lastName: "Shirsat",
+		firstNames: "Prashant, Madhuri, Sagar",
+		location: "Monmouth Junction, NJ",
+		count: 3
 	},
 	{
 		lastName: "Vaigankar",

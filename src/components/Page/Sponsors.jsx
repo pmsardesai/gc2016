@@ -12,6 +12,36 @@ class Sponsors extends React.Component {
 				</div>
 				<div className="page-content sponsors-container"> 
 					<div className="sponsors-container-inner">
+						<div className="sponsors-thank-you">
+							<div className="with-logo">
+								<div className="logo tridentia"></div>
+								<div className="logo virginkar"></div>
+							</div>
+
+							<div className="without-logo"> 
+								<div className="general">
+									<div class="best-wishes">Best wishes from</div>
+									<div className="name">Dr. Rajanikant & Rajani Usgaonkar</div>
+								</div>
+								<div className="general">
+									<div class="best-wishes">Best wishes from</div>
+									<div className="name">Dilip & Meenal Sanvordeker</div>
+								</div>
+								<div className="general">
+									<div class="best-wishes">Best wishes from</div>
+									<div className="name">Dr. Anil & Vanita Shirwaikar</div>
+								</div>
+								<div className="general">
+									<div class="best-wishes">Best wishes from</div>
+									<div className="name">Balaji & Chaya Angle, Angle Enterprises</div>
+								</div>
+								<div className="general">
+									<div class="best-wishes">Best wishes from</div>
+									<div className="name">Dr. Gajanan & Mrs. Vidya Gaitonde</div>
+								</div>
+							</div>
+						</div>
+
 						<div className="info title">
 							Sponsorship for the 2016 Goan Convention
 						</div>
