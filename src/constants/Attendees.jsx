@@ -23,6 +23,12 @@ module.exports =
 		count: 2
 	},
 	{
+		lastName: "Bhende",
+		firstNames: "Kishore, Seema",
+		location: "Stockton, CA",
+		count: 2
+	},
+	{
 		lastName: "Borker",
 		firstNames: "Gaurav",
 		location: "Santa Clara, CA",
@@ -143,6 +149,12 @@ module.exports =
 		count: 2
 	},
 	{
+		lastName: "Karmali",
+		firstNames: "Narendra, Asha",
+		location: "Oak Brook, IL",
+		count: 2
+	},
+	{
 		lastName: "Keni",
 		firstNames: "Pradeep, Sadhana",
 		location: "Oak Brook, IL",
@@ -159,12 +171,6 @@ module.exports =
 		firstNames: "Vasant",
 		location: "La Palma, CA",
 		count: 1
-	},
-	{
-		lastName: "Karmali",
-		firstNames: "Narendra, Asha",
-		location: "Oak Brook, IL",
-		count: 2
 	},
 	{
 		lastName: "Kundaikar",
@@ -260,6 +266,12 @@ module.exports =
 		lastName: "Sanvordeker",
 		firstNames: "Dilip, Meenal",
 		location: "Irvine, CA",
+		count: 2
+	},
+	{
+		lastName: "Sanwardekar",
+		firstNames: "Paresh, Meghna",
+		location: "Panaji, Goa, India",
 		count: 2
 	},
 	{

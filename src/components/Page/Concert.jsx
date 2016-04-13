@@ -12,6 +12,15 @@ class Concert extends React.Component {
 				</div>
 				<div className="page-content concert-container"> 
 					<div className="concert-container-inner">
+						<div className="sponsored-by">
+							<div className="text">
+								Witness a musical extravaganza by Sonia Shirsat, Varun Carvalho and Mukesh Ghatwal sponsored by Tridentia developers
+							</div>
+							<div className="logo">
+								<a className="tridentia" href="http://tridentia.in/" target="_blank"></a>
+							</div>
+						</div>
+
 						<div className="singer hidden">
 							<div className="name">Sonia Shirsat</div>
 							<div className="photo sonia"> </div>
