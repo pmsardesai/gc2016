@@ -12,6 +12,7 @@ class Sponsors extends React.Component {
 				</div>
 				<div className="page-content sponsors-container"> 
 					<div className="sponsors-container-inner">
+					{/*
 						<div className="sponsors-thank-you">
 							<div className="with-logo">
 								<a className="logo tridentia" href="http://tridentia.in/" target="_blank"></a>
@@ -41,7 +42,7 @@ class Sponsors extends React.Component {
 								</div>
 							</div>
 						</div>
-
+						*/ }
 						<div className="info title">
 							Sponsorship for the 2016 Goan Convention
 						</div>

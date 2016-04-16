@@ -245,6 +245,12 @@ module.exports =
 		count: 2
 	},
 	{
+		lastName: "Rane",
+		firstNames: "Navin, Shreya Natekar",
+		location: "Pleasonton, CA",
+		count: 2
+	},
+	{
 		lastName: "Rege",
 		firstNames: "Ratan, Rekha",
 		location: "Irvine, CA",
