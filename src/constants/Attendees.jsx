@@ -77,6 +77,12 @@ module.exports =
 		count: 2
 	},
 	{
+		lastName: "De Souza",
+		firstNames: "Maria",
+		location: "Los Angeles, CA",
+		count: 1
+	},
+	{
 		lastName: "Fallary",
 		firstNames: "Shreya Naik",
 		location: "Minneapolis, MN",
@@ -200,6 +206,12 @@ module.exports =
 		lastName: "Lourenco",
 		firstNames: "Joseph",
 		location: "San Jose, CA",
+		count: 1
+	},
+	{
+		lastName: "Mahajan",
+		firstNames: "Mangesh",
+		location: "Irvine, CA",
 		count: 1
 	},
 	{
