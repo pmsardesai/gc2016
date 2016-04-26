@@ -240,9 +240,9 @@ module.exports =
 	},
 	{
 		lastName: "Pawooskar",
-		firstNames: "Maia",
+		firstNames: "Maia, Sachi Rukmi Pawooskar Almeida",
 		location: "Redlands, CA",
-		count: 1
+		count: 2
 	},
 	{
 		lastName: "Prabhudesai",
