@@ -32,7 +32,7 @@ class Registration extends React.Component {
 								<tr> 
 									<td>Adult Regular (21+)</td>
 									<td className="cost">$185</td>
-									<td className="cost">$205</td>
+									<td className="cost">$198</td>
 								</tr>
 
 								<tr> 
