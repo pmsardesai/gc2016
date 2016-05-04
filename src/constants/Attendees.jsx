@@ -119,6 +119,12 @@ module.exports =
 		count: 1
 	},
 	{
+		lastName: "Hasolkar",
+		firstNames: "Chandrakant, Seema",
+		location: "Orange, CA",
+		count: 2
+	},
+	{
 		lastName: "Kakodkar",
 		firstNames: "Akshay, Purnima Kamat Tarkar",
 		location: "San Diego, CA",
@@ -233,6 +239,12 @@ module.exports =
 		count: 3
 	},
 	{
+		lastName: "Naik",
+		firstNames: "Satish, Swati, Ishaan, Uma",
+		location: "Pearland, TX",
+		count: 4
+	},
+	{
 		lastName: "Narvekar",
 		firstNames: "Chandan, Kini Natekar, Nila",
 		location: "San Ramon, CA",
@@ -291,6 +303,12 @@ module.exports =
 		firstNames: "Prashant, Radhika Naik",
 		location: "Aliso Viejo, CA",
 		count: 2
+	},
+	{
+		lastName: "Samant",
+		firstNames: "Anupama",
+		location: "La Verne, CA",
+		count: 1
 	},
 	{
 		lastName: "Sanvordeker",
@@ -372,8 +390,8 @@ module.exports =
 	},
 	{
 		lastName: "Walke",
-		firstNames: "Abhijit, Arti Ramnathkar",
+		firstNames: "Abhijit; Arti & Avinash Ramnathkar",
 		location: "San Diego, CA",
-		count: 2
+		count: 3
 	}
 ];

@@ -69,7 +69,7 @@ module.exports =
 	},
 	{
 		name: "Parijat Prabhudesai",
-		title: "Overall Program Coordinator",
+		title: "Sound and Stage Coordinator",
 		imageCss: "ImgParijat",
 		social: {
 			email: "mailto:parijat.prabhudesai@gmail.com"
@@ -89,6 +89,30 @@ module.exports =
 		imageCss: "ImgVaishnavi",
 		social: {
 			email: "mailto:prabhuvaishnavi@gmail.com"
+		}
+	},
+	{
+		name: "Srinath Shenvi Buyao",
+		title: "Resources Coordinator",
+		imageCss: "ImgSrinath",
+		social: {
+			email: ""
+		}
+	},
+	{
+		name: "Akshay Sinai Kakodkar",
+		title: "Presentation Coordinator",
+		imageCss: "ImgAkshay",
+		social: {
+			email: ""
+		}
+	},
+	{
+		name: "Prashant Rokade",
+		title: "Technical Expert",
+		imageCss: "ImgPrashant",
+		social: {
+			email: ""
 		}
 	}
 ];
