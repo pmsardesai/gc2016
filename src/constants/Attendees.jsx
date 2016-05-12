@@ -29,13 +29,13 @@ module.exports =
 		count: 2
 	},
 	{
-		lastName: "Boarker",
+		lastName: "Borcar",
 		firstNames: "Shrihari",
 		location: "Baton Rouge, LA",
 		count: 1
 	},
 	{
-		lastName: "Borker",
+		lastName: "Borkar",
 		firstNames: "Gaurav",
 		location: "Santa Clara, CA",
 		count: 1
@@ -128,6 +128,12 @@ module.exports =
 		lastName: "Kakodkar",
 		firstNames: "Akshay, Purnima Kamat Tarkar",
 		location: "San Diego, CA",
+		count: 2
+	},
+	{
+		lastName: "Kamat",
+		firstNames: "Abhay, Anu Pandey",
+		location: "Porter Ranch, CA",
 		count: 2
 	},
 	{

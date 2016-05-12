@@ -96,7 +96,7 @@ module.exports =
 		title: "Resources Coordinator",
 		imageCss: "ImgSrinath",
 		social: {
-			email: ""
+			email: "mailto:srinath.buyao@gmail.com"
 		}
 	},
 	{
@@ -104,7 +104,7 @@ module.exports =
 		title: "Presentation Coordinator",
 		imageCss: "ImgAkshay",
 		social: {
-			email: ""
+			email: "mailto:akshaykakodkar@gmail.com"
 		}
 	},
 	{
@@ -112,7 +112,7 @@ module.exports =
 		title: "Technical Expert",
 		imageCss: "ImgPrashant",
 		social: {
-			email: ""
+			email: "mailto:prshant.rokade@gmail.com"
 		}
 	}
 ];
