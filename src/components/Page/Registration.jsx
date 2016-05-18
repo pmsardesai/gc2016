@@ -14,7 +14,7 @@ class Registration extends React.Component {
 				<div className="page-content registration-container"> 
 					<div className="registration-container-inner">
 						<div className="info first">
-							It gives us immense pleasure to invite you all to the 13th Goan Convention in Orange County, CA. The table below lists the registration fees for the convention. Registration opens in December 2015. Early bird registration is available if you register before 30th April 2016.
+							It gives us immense pleasure to invite you all to the 13th Goan Convention in Orange County, CA. The table below lists the registration fees for the convention. Registration is open until 30th June 2016. We have day-pass options available for people who are unable to attend the convention for all three days.
 						</div>
 						<div className="info">
 							<div className="highlight">
@@ -22,9 +22,12 @@ class Registration extends React.Component {
 							</div>
 						</div>
 						<div className="info table">
+							<div className="register-title">Full Event Registration</div>
+							<div className="register-description">These fees are for guests who want to attend the convention on all three days. Includes all activities and drink coupons.</div>
+
 							<table>
 								<tr className="table-header"> 
-									<td>2016 Registration Fees*</td>
+									<td></td>
 									<td className="cost">Dec-Apr</td>
 									<td className="cost">May-Jun</td>
 								</tr>
@@ -48,7 +51,34 @@ class Registration extends React.Component {
 								</tr>
 							</table>
 						</div>
-						<div className="info note">* Subject to change before December 2015</div>
+
+						<div className="info table">
+							<div className="register-title">Day Passes</div>
+							<div className="register-description">These fees are for guests who want to attend the convention on specific dates. Price includes dinner. Drinks are not included, but will be available at the hotel for purchase.</div>
+
+
+							<table>
+								<tr className="table-header"> 
+									<td></td>
+									<td className="cost">Fees</td>
+								</tr>
+
+								<tr> 
+									<td><b>Day 1 Pass (6+)</b> 2nd July, 4:00pm to 11:00pm</td>
+									<td className="cost">$75</td>
+								</tr>
+
+								<tr> 
+									<td><b>Day 2 Pass (6+)</b> 3rd July, 9:30am to 11:00pm</td>
+									<td className="cost">$125</td>
+								</tr>
+
+								<tr> 
+									<td><b>Day 2 Concert Pass (6+)</b> 3rd July, 4:00pm to 11:00pm</td>
+									<td className="cost">$75</td>
+								</tr>
+							</table>
+						</div>
 
 						<div className="info">
 							There are two ways you can register for this event. You may click on “Online Registration" button below and complete the registration form and payment on our secure online payment website. Or you can click on the “Mail-in Registration" button below to download the registration form.
