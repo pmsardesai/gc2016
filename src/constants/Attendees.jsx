@@ -85,12 +85,12 @@ module.exports =
 	{
 		lastName: "De Souza",
 		firstNames: "Maria",
-		location: "Los Angeles, CA",
+		location: "Pleasonton, CA",
 		count: 1
 	},
 	{
 		lastName: "Fallary",
-		firstNames: "Shreya Naik",
+		firstNames: "Shreya",
 		location: "Minneapolis, MN",
 		count: 1
 	},
@@ -245,6 +245,12 @@ module.exports =
 		count: 3
 	},
 	{
+		lastName: "Nadkarni",
+		firstNames: "Sreekant, Hema",
+		location: "Cupertino, CA",
+		count: 2
+	},
+	{
 		lastName: "Naik",
 		firstNames: "Satish, Swati, Ishaan, Uma",
 		location: "Pearland, TX",
@@ -345,6 +351,12 @@ module.exports =
 		firstNames: "Raj, Smeeta, Nolan",
 		location: "Arcadia, CA",
 		count: 3
+	},
+	{
+		lastName: "Sawardekar",
+		firstNames: "Satish, Pratibha",
+		location: "Port Matilda, PA",
+		count: 2
 	},
 	{
 		lastName: "Shenoy",

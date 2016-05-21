@@ -33,19 +33,19 @@ class Registration extends React.Component {
 								</tr>
 
 								<tr> 
-									<td>Adult Regular (21+)</td>
+									<td><b>Adult Regular (Age 21+)</b></td>
 									<td className="cost">$185</td>
 									<td className="cost">$199</td>
 								</tr>
 
 								<tr> 
-									<td>Adult Student (16-21)</td>
+									<td><b>Adult Student (Age 16-21)</b></td>
 									<td className="cost">$145</td>
 									<td className="cost">$165</td>
 								</tr>
 
 								<tr> 
-									<td>Child (6-15)</td>
+									<td><b>Child (Age 6-15)</b></td>
 									<td className="cost">$115</td>
 									<td className="cost">$125</td>
 								</tr>
@@ -64,17 +64,17 @@ class Registration extends React.Component {
 								</tr>
 
 								<tr> 
-									<td><b>Day 1 Pass (6+)</b> 2nd July, 4:00pm to 11:00pm</td>
+									<td><b>Day 1 Pass (Age 6+)</b> 2nd July, 4:00pm to 11:00pm</td>
 									<td className="cost">$75</td>
 								</tr>
 
 								<tr> 
-									<td><b>Day 2 Pass (6+)</b> 3rd July, 9:30am to 11:00pm</td>
+									<td><b>Day 2 Pass (Age 6+)</b> 3rd July, 9:30am to 11:00pm</td>
 									<td className="cost">$125</td>
 								</tr>
 
 								<tr> 
-									<td><b>Day 2 Concert Pass (6+)</b> 3rd July, 4:00pm to 11:00pm</td>
+									<td><b>Day 2 Concert Pass (Age 6+)</b> 3rd July, 4:00pm to 11:00pm</td>
 									<td className="cost">$75</td>
 								</tr>
 							</table>
