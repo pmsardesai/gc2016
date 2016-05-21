@@ -9,7 +9,7 @@ class Home extends React.Component {
 				<div className='home-inner'>
 					<div className='home-header'> </div>
 					<div className='extension'>
-						Book your hotel before the deadline of June 11
+						Book your hotel before June 11
 						<span className="note">th</span>, 2016!!
 					</div>
 					<div className='tagline'>

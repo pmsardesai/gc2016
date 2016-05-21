@@ -21,7 +21,7 @@ class Concert extends React.Component {
 							</div>
 						</div>
 
-						<div className="singer hidden">
+						<div className="singer">
 							<div className="name">Sonia Shirsat</div>
 							<div className="photo sonia"> </div>
 							<div className="description sonia"> 
