@@ -77,12 +77,6 @@ module.exports =
 		count: 1
 	},
 	{
-		lastName: "Deshmukh",
-		firstNames: "Udayan, Sanjyot",
-		location: "Ottawa, ON, Canada",
-		count: 2
-	},
-	{
 		lastName: "De Souza",
 		firstNames: "Maria",
 		location: "Pleasonton, CA",
