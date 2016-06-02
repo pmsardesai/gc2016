@@ -13,7 +13,7 @@ module.exports =
 		howSubject: "“Photography Contest – Your name”",
 		howLast: ". Write your name, telephone number and photo caption in the e-mail body.",
 		theme: "“Your memory/memories of Goa Then and Now”",
-		deadline: "31st May 2016",
+		deadline: "15th June 2016",
 		rules: [
 			"Photographs must be in color or B&W in digital format.",
 			"Digital file must be 10 megabytes or smaller, must be in JPEG or JPG format.",
@@ -33,7 +33,7 @@ module.exports =
 		howSubject: "“Drawing Contest – Your name”",
 		howLast: ". Write your name, Age, telephone number and description of the drawing in the body of the e-mail.",
 		theme: "“Favorite memory of Goa”",
-		deadline: "31st May 2016",
+		deadline: "15th June 2016",
 		rules: [
 			"Scanned copies of the drawings must be in color in digital format.",
 			"Digital file must be 10 megabytes or smaller, must be in JPEG or JPG format."
@@ -48,7 +48,7 @@ module.exports =
 		howFirst: "Entry is free. Please send in your entries to",
 		howSubject: "“Cultural Event Entry– Your name”",
 		howLast: ". Write your name, telephone number and details of the performance in the e-mail body.",
-		deadline: "31st May 2016",
+		deadline: "15th June 2016",
 		rules: [
 			"Each performance/item needs to meet the following time limit requirements",
 			"subrules",
@@ -82,7 +82,7 @@ module.exports =
 		howFirst: "Please e-mail your entry to", 
 		howSubject: "“Karaoke Night – Your name”",
 		howLast: " with the name of the song you would like to sing in the e-mail body. If you have a karaoke track you prefer please attach it to the e-mail.",
-		deadline: "31st May 2016",
+		deadline: "15th June 2016",
 		additional: "On the spot entries will also be accepted depending on the availability of time."
 	}
 ];
