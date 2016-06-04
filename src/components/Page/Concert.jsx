@@ -45,6 +45,7 @@ class Concert extends React.Component {
 						</div>
 						<div className="singer">
 							<div className="name">Steve Carvalho</div>
+							<div className="photo steve"> </div>
 							<div className="description"> 
 								A musician, sound engineer and software developer by profession. Born and brought up in Goa, Steve has worked in the music and software industry in different countries like UAE and UK. He has also been playing guitar in various top bands from Goa and Dubai from 1999. He has completed his sound engineering studies in London and has worked with renowned artists like Zakir Hussain and Ali Campbell of ub40 among a host of others. Music is a passionate way of life which has brought him back to India as a musician and sound engineer after 10 long years.
 							</div>
