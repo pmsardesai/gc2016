@@ -27,7 +27,7 @@ module.exports =
 		firstNames: "Rittik, Sheetal Ibrampurkar",
 		location: "Phoenix, AZ",
 		count: 2
-	}
+	},
 	{
 		lastName: "Bhende",
 		firstNames: "Kishore, Seema",
