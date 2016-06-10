@@ -23,6 +23,12 @@ module.exports =
 		count: 2
 	},
 	{
+		lastName: "Banik",
+		firstNames: "Rittik, Sheetal Ibrampurkar",
+		location: "Phoenix, AZ",
+		count: 2
+	}
+	{
 		lastName: "Bhende",
 		firstNames: "Kishore, Seema",
 		location: "Stockton, CA",
@@ -128,6 +134,12 @@ module.exports =
 		lastName: "Kamat",
 		firstNames: "Abhay, Anu Pandey",
 		location: "Porter Ranch, CA",
+		count: 2
+	},
+	{
+		lastName: "Kamat",
+		firstNames: "Ashok, Geeta",
+		location: "Ponda, Goa, India",
 		count: 2
 	},
 	{
@@ -357,6 +369,12 @@ module.exports =
 		firstNames: "Prakash",
 		location: "West Covina, CA",
 		count: 1
+	},
+	{
+		lastName: "Shirsat",
+		firstNames: "Kiran, Smita, Prasad, Nikita",
+		location: "Panaji, Goa, India",
+		count: 4
 	},
 	{
 		lastName: "Shirsat",
