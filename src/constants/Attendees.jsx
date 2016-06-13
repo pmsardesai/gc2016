@@ -275,6 +275,12 @@ module.exports =
 		count: 2
 	},
 	{
+		lastName: "Pai-Panandiker",
+		firstNames: "Kamlesh, Mangala",
+		location: "Excelsior, MN",
+		count: 2
+	},
+	{
 		lastName: "Parkar",
 		firstNames: "Rohin, Vaibhavi, Ritika",
 		location: "San Jose, CA",

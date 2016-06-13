@@ -32,7 +32,6 @@ class Schedule extends React.Component {
 								<tr>
 									<td className="time">2:30 PM</td>
 									<td className="event" rowSpan="2">Registration</td>
-									<td className="event" rowSpan="2">Shuttle service from SNA airport can be requested by calling the hotel</td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
@@ -42,35 +41,29 @@ class Schedule extends React.Component {
 								<tr>
 									<td className="time">4:00 PM</td>
 									<td className="event empty"></td>
-									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">4:30 PM</td>
 									<td className="event">Welcome ceremony</td>
 									<td className="event">Youth and kids activities</td>
-									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">6:00 PM</td>
 									<td className="event" rowSpan="2">Goenche Kalakar: Cultural performances & fancy dress parade</td>
 									<td className="event empty"></td>
-									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">7:00 PM</td>
-									<td className="event empty"></td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">7:30 PM</td>
 									<td className="event">Cocktail hour, followed by dinner</td>
 									<td className="event empty"></td>
-									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">9:00 PM (until night)</td>
 									<td className="event highlight">Musical night with Sidhanath Buyao, followed by Karaoke and DJ Music</td>
-									<td className="event empty"></td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
@@ -83,41 +76,34 @@ class Schedule extends React.Component {
 								</tr>
 								<tr>
 									<td className="time">7:00 AM</td>
-									<td className="event">Fitness dance boot camp by Jonathan Bosco</td>
+									<td className="event">Fitness dance boot camp by Jonathan Bosco OR Yoga</td>
 									<td className="event" rowSpan="3">Breakfast</td>
-									<td className="event">Yoga</td>
 								</tr>
 								<tr>
 									<td className="time">8:00 AM</td>
 									<td className="event">Bollywood Hip Hop Master Class by Jonathan Bosco</td>
-									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">8:45 AM</td>
-									<td className="event empty"></td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">9:30 AM</td>
 									<td className="event">Bus ride to picnic</td>
 									<td className="event empty"></td>
-									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">10:00 AM</td>
 									<td className="event">Picnic at William Mason Park, Irvine</td>
 									<td className="event">Youth and kids activities</td>
-									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">12:30 PM</td>
 									<td className="event">Picnic lunch</td>
 									<td className="event empty"></td>
-									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">1:30 PM</td>
-									<td className="event empty"></td>
 									<td className="event empty"></td>
 									<td className="event empty"></td>
 								</tr>
@@ -125,11 +111,9 @@ class Schedule extends React.Component {
 									<td className="time">1:45 PM</td>
 									<td className="event">Bus ride back to hotel</td>
 									<td className="event empty"></td>
-									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">2:30 PM</td>
-									<td className="event empty"></td>
 									<td className="event empty"></td>
 									<td className="event empty"></td>
 								</tr>
@@ -137,40 +121,33 @@ class Schedule extends React.Component {
 									<td className="time">3:00 PM</td>
 									<td className="event">Siesta time</td>
 									<td className="event" rowSpan="3">Bowling for young adults (15-22)</td>
-									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">3:30 PM</td>
-									<td className="event">GOA presentation</td>
-									<td className="event empty"></td>
+									<td className="event">GOA presentation followed by tea</td>
 								</tr>
 								<tr>
 									<td className="time">4:00 PM</td>
-									<td className="event highlight">Indian classical performance by Saili Oak</td>
-									<td className="event">Tea time</td>
-								</tr>
-								<tr>
-									<td className="time">5:30 PM</td>
 									<td className="event">Ami Goenkar - Cultural program</td>
-									<td className="event empty"></td>
+								</tr>
+								<tr>
+									<td className="time">4:45 PM</td>
+									<td className="event highlight">Indian classical performance by Saili Oak</td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
-									<td className="time">6:30 PM</td>
+									<td className="time">6:15 PM</td>
 									<td className="event highlight">Comedy Konkani Natak: Mogache Lagna</td>
-									<td className="event empty"></td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">7:30 PM</td>
 									<td className="event">Cocktail hour followed by dinner</td>
 									<td className="event empty"></td>
-									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">9:00 PM</td>
 									<td className="event highlight">Sonia Shirsat, Varun Carvalho & Mukesh Ghatwal Live in Concert</td>
-									<td className="event empty"></td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
@@ -185,30 +162,25 @@ class Schedule extends React.Component {
 									<td className="time">7:00 AM</td>
 									<td className="event empty"></td>
 									<td className="event" rowSpan="2">Breakfast</td>
-									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">9:00 AM</td>
 									<td className="event">A better Goa: Group discussion</td>
-									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">10:00 AM</td>
 									<td className="event">Closing ceremony</td>
-									<td className="event empty"></td>
 									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">11:00 AM</td>
 									<td className="event">Financial report and vote of thanks</td>
 									<td className="event empty"></td>
-									<td className="event empty"></td>
 								</tr>
 								<tr>
 									<td className="time">11:30 AM</td>
 									<td className="event">Lunch to go and check-out</td>
 									<td className="event"> Shuttles to airport will be available (book one at the hotel reception)</td>
-									<td className="event empty"></td>
 								</tr>
 							</table>
 						</div>
