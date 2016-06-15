@@ -16,6 +16,8 @@ class Hotel extends React.Component {
 				<div className="page-content hotel-container"> 
 					<div className="hotel-container-inner">
 
+						<div className="important">Book your hotel before June 20th, 2016!!</div>
+
 						<div className="description">The Goan Convention 2016 will be held at</div>
 						<div className="title"> Double Tree by Hilton Hotel</div>
 						<div className="subtitle">Santa Ana - Orange County Airport</div>
@@ -44,11 +46,17 @@ class Hotel extends React.Component {
 								<div className="cell left">Phone Number</div>
 								<div className="cell right">(714) 442 1979 </div>
 							</div>
-							<div className="info last">
+							<div className="info">
 								<div className="cell left">Booking Website</div>
 								<div className="cell right">
 									<a href="http://doubletree.hilton.com/en/dt/groups/personalized/S/STAOCDT-GON-20160702/index.jhtml?WT.mc_id=POG" target="_blank">Click here for hotel reservation online</a>
 									<div className="note">For reservation by phone, please call the hotel at (714) 442 1979. Send us an email at <a href="mailto:goanconvention2016@gmail.com" target="_blank" className='email'>goanconvention2016@gmail.com</a> for the promo code.</div>
+								</div>
+							</div>
+							<div className="info last">
+								<div className="cell left">Shuttle</div>
+								<div className="cell right">
+									If you need a shuttle from Santa Ana Airport to the hotel, please call the hotel at 714-825-3333 after you pick-up your luggage
 								</div>
 							</div>
 						</div>
