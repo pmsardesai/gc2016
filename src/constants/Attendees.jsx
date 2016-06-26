@@ -209,6 +209,12 @@ module.exports =
 		count: 3
 	},
 	{
+		lastName: "Korgaokar",
+		firstNames: "Manasi",
+		location: "Cypress, CA",
+		count: 1
+	},
+	{
 		lastName: "Kundaikar",
 		firstNames: "Ganesh",
 		location: "Sunnyvale, CA",
@@ -237,6 +243,12 @@ module.exports =
 		firstNames: "Joseph",
 		location: "San Jose, CA",
 		count: 1
+	},
+	{
+		lastName: "Lourenco",
+		firstNames: "Wilbur, Jean Monteiro",
+		location: "Phoenix, AZ",
+		count: 2
 	},
 	{
 		lastName: "Mahajan",
