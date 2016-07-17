@@ -41,11 +41,11 @@ class MenuBar extends React.Component {
 		const committeeCss = this._getButtonCss('committee');
 		//const galleryCss = this._getButtonCss('gallery');
 		const pastEventsCss = this._getButtonCss('pastevents');
-		const registerCss = this._getButtonCss('register');
+		//const registerCss = this._getButtonCss('register');
 
 		return (
 			<div className={baseClass}>
-				<Link to="/register" className={registerCss} onClick={this.props.onItemClick}>Register</Link>
+				{ /*<Link to="/register" className={registerCss} onClick={this.props.onItemClick}>Register</Link> */ }
 				<Link to="/highlights" className={highlights} onClick={this.props.onItemClick}>Attractions</Link>
 				<Link to="/schedule" className={scheduleCss} onClick={this.props.onItemClick}>Schedule</Link>
 				<Link to="/concert" className={concertCss} onClick={this.props.onItemClick}>Concert</Link>

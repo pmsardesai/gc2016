@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+//import { Link } from 'react-router';
 import Footer from '../Footer';
 
 class Home extends React.Component {
@@ -8,10 +8,10 @@ class Home extends React.Component {
 			<div className='content home'> 
 				<div className='home-inner'>
 					<div className='home-header'> </div>
-					<div className='extension'>
+					{ /*<div className='extension'>
 						Book your hotel before June 20
 						<span className="note">th</span>, 2016!!
-					</div>
+					</div>*/ }
 					<div className='tagline'>
 						<div className='hindi'>थंड वाऱ्यार दर्या ल्हारार, गोंया तुजी याद येता</div>
 						<div className='english'>Come enjoy Goa in Southern California</div>
@@ -56,8 +56,10 @@ class Home extends React.Component {
 					</div>
 
 					<div className='button-container'>
-						<Link to='/register' className='button register-button'>Register</Link>
+						{ /*<Link to='/register' className='button register-button'>Register</Link> */ }
 						{ /*<Link to='/sponsors' className='button donate-button'>Donate</Link> */ }
+						<a className="button souvenir-doc" href="documents/2016.pdf" target="_blank">Souvenir</a>
+						<a className="button video-link" href="https://www.youtube.com/playlist?list=PL1Oj2nzaTCRzM33rnjfOgK7v7KE4pJW3Q " target="_blank">Video</a>
 					</div>
 				</div>
 				<Footer />
