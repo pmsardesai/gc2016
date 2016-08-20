@@ -58,8 +58,9 @@ class Home extends React.Component {
 					<div className='button-container'>
 						{ /*<Link to='/register' className='button register-button'>Register</Link> */ }
 						{ /*<Link to='/sponsors' className='button donate-button'>Donate</Link> */ }
+						<a className="button video-link" href="https://www.youtube.com/playlist?list=PL1Oj2nzaTCRzM33rnjfOgK7v7KE4pJW3Q " target="_blank">Videos</a>
 						<a className="button souvenir-doc" href="documents/2016.pdf" target="_blank">Souvenir</a>
-						<a className="button video-link" href="https://www.youtube.com/playlist?list=PL1Oj2nzaTCRzM33rnjfOgK7v7KE4pJW3Q " target="_blank">Video</a>
+						<a className="button photo-link" href="https://drive.google.com/drive/folders/0BzOMrRxUiFHdTzdZM0tkeW90ODg">Photos</a>
 					</div>
 				</div>
 				<Footer />

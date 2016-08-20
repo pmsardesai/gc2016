@@ -9,7 +9,7 @@ class Registration extends React.Component {
 				<div className="black-header-background" /> 
 				<div className="page-header">
 					<div className="background" /> 
-					<div className="page-title">Registration</div>
+					<div className="page-title">Attendees</div>
 				</div>
 				<div className="page-content registration-container"> 
 					<div className="registration-container-inner">
@@ -105,8 +105,7 @@ class Registration extends React.Component {
 							<div className="indent">Rohin Parkar, 7189 Galli Ct, Unit#4, San Jose CA 95129, USA</div>
 						</div>
 
-						<div className="info whos-coming">
-							Who is coming so far?
+						<div className="whos-coming">
 							<Attendees />
 						</div>
 
