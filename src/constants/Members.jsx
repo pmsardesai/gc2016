@@ -55,7 +55,7 @@ module.exports =
 		social: {
 			facebook: "https://www.facebook.com/pooja.sardesai",
 			email: "mailto:poojasar@hotmail.com",
-			linkedin: "https://ca.linkedin.com/in/psardesai",
+			linkedin: "https://ca.linkedin.com/in/pmsardesai",
 			github: "https://github.com/pmsardesai"
 		}
 	},
